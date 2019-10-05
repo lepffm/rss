@@ -1,5 +1,3 @@
-TOKEN: ${{ secrets.TOKEN }}
-
 ORGS="github grafana awslabs"
 
 get_issues() {
