@@ -21,4 +21,10 @@ get_issues() {
         get_issues "github"
     done
     printf "\n</channel>\n</rss>\n"
-) | tee feed.xml
+) | base64 | tr -d "\n" > feed.xml
+
+
+CURRENT_SHA=$(curl -s -u :$TOKEN https://api.github.com/repos/lbonanomi/rss/contents/feed.xml | jq .sha | tr -d '"')
+
+curl -s -u :$TOKEN -X PUT -d '{ "message":"Auto", "sha":"'$CURRENT_SHA'", "content":"'$(cat feed.xml)'" }' https://api.github.com/repos/lbonanomi/rss/contents/feed.xml #| jq .sha
+
