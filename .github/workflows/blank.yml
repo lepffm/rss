@@ -26,7 +26,7 @@ jobs:
     - name: more
       run: git config --global user.name "lbonanomi RSS feeder"
     - name: remote
-      run: git remote -vv
+      run: git show-ref
     - name: git-add
       run: git add feed.xml
     - name: git-commit
