@@ -2,18 +2,38 @@
 <rss version="2.0">
 <channel>
 <item>
-<link>
-https://github.com/github/linguist/issues/1626
+<title>
+"Fixing C/C++/Objective-C classifications"
+</title>
+<link>https://github.com/github/linguist/issues/1626
 </link>
 </item>
 <item>
-<link>
-https://github.com/github/linguist/issues/3225
+<title>
+"Travis build fails because of Licensee update"
+</title>
+<link>https://github.com/github/linguist/issues/3225
 </link>
 </item>
 <item>
-<link>
-https://github.com/github/linguist/issues/3924
+<title>
+"Outstanding Grammar Issues"
+</title>
+<link>https://github.com/github/linguist/issues/3924
+</link>
+</item>
+<item>
+<title>
+"how can I set the appsync config using swift?"
+</title>
+<link>https://github.com/awslabs/aws-mobile-appsync-sdk-ios/issues/5
+</link>
+</item>
+<item>
+<title>
+"Improve developer documentation on debugging in Carthage based project"
+</title>
+<link>https://github.com/awslabs/aws-mobile-appsync-sdk-ios/issues/176
 </link>
 </item>
 
