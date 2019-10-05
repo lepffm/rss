@@ -11,12 +11,14 @@ get_issues() {
     done
 }
 
-echo '<?xml version="1.0" encoding="UTF-8" ?>'
-echo '<rss version="2.0">'
-echo '<channel>'
+(
+    echo '<?xml version="1.0" encoding="UTF-8" ?>'
+    echo '<rss version="2.0">'
+    echo '<channel>'
 
-for ORG in $ORGS
-do
+    for ORG in $ORGS
+    do
         get_issues "github"
-done
-printf "\n</channel>\n</rss>\n"
+    done
+    printf "\n</channel>\n</rss>\n"
+) > feed.xml
