@@ -15,26 +15,7 @@ jobs:
     steps:
     
     - uses: actions/checkout@v1
-    - name: Whats around?
-      run: ls
     - name: execution permissions
       run: chmod 755 ./build.sh
     - name: build
       run: ./build.sh
-    - name: git bootstrap
-      run: git config --global user.email "lbonanomi@gmail.com"
-    - name: more
-      run: git config --global user.name "lbonanomi RSS feeder"
-    - name: remote
-      run: git show-ref
-    - name: git-add
-      run: git add feed.xml
-    - name: git-commit
-      run: git commit -m "Autobuild"
-    - name: git-push
-      run: git push origin HEAD:master
-
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
