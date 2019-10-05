@@ -16,7 +16,7 @@ jobs:
       run: ls
     - name: build
       run: ./build.sh
-    -name: wheres git
+    - name: wheres git
       run: which git
 
     - name: Run a multi-line script
