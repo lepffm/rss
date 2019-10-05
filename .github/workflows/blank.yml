@@ -1,6 +1,9 @@
 name: CI
 
-on: [push]
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/15 * * * *'
 
 jobs:
   build:
@@ -13,6 +16,8 @@ jobs:
       run: pwd
     - name: Whats around?
       run: ls
+    - name: build
+      run: ./build.sh
 
     - name: Run a multi-line script
       run: |
