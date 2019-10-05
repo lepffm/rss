@@ -21,4 +21,4 @@ get_issues() {
         get_issues "github"
     done
     printf "\n</channel>\n</rss>\n"
-) > feed.xml
+) | tee feed.xml
