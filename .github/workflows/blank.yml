@@ -25,6 +25,8 @@ jobs:
       run: git config --global user.email "lbonanomi@gmail.com"
     - name: more
       run: git config --global user.name "lbonanomi RSS feeder"
+    - name: remote
+      run: git remote -vv
     - name: git-add
       run: git add feed.xml
     - name: git-commit
