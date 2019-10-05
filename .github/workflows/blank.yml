@@ -5,12 +5,17 @@ on:
     # * is a special character in YAML so you have to quote this string
     - cron:  '*/2 * * * *'
 
+steps:
+  - name: My first action
+    env:
+      TOKEN: ${{ secrets.TOKEN }}      
 jobs:
   build:
 
     runs-on: ubuntu-latest
     
     steps:
+    
     - uses: actions/checkout@v1
     - name: Whats around?
       run: ls
