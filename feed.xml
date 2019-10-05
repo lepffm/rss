@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
-
 <channel>
-  <title>Monkeying with an old protocol</title>
-  <link>https://lbonanomi.github.io/rss</link>
-  <description>Aggregate Help Wanted</description>
+<item>
+<link>
+https://github.com/github/linguist/issues/1626
+</link>
+</item>
+<item>
+<link>
+https://github.com/github/linguist/issues/3225
+</link>
+</item>
+<item>
+<link>
+https://github.com/github/linguist/issues/3924
+</link>
+</item>
 
-  <item>
-    <title>RSS Tutorial</title>
-    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
-    <description>New RSS tutorial on W3Schools</description>
-  </item>
-  
-  <item>
-    <title>XML Tutorial</title>
-    <link>https://www.w3schools.com/xml</link>
-    <description>New XML tutorial on W3Schools</description>
-  </item>
-
-  </channel>
+</channel>
 </rss>
