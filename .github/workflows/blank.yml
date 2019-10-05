@@ -1,4 +1,4 @@
-name: CI
+name: RSS
 
 on:
   schedule:
@@ -12,12 +12,12 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Where am I?
-      run: pwd
     - name: Whats around?
       run: ls
     - name: build
       run: ./build.sh
+    -name: wheres git?
+      run: which git 
 
     - name: Run a multi-line script
       run: |
