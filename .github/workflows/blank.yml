@@ -30,7 +30,7 @@ jobs:
     - name: git-commit
       run: git commit -m "Autobuild"
     - name: git-push
-      run: git push origin
+      run: git push git push origin HEAD:master
 
     - name: Run a multi-line script
       run: |
