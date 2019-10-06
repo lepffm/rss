@@ -2,8 +2,10 @@
 # Get the last 100 issues labelled "Help Wanted" and format as
 # RSS articles
 
-echo "FEED URL: https://$GITHUB_ACTOR.github.io/$(basename $(pwd))/feed.xml"
-
+REPO_OWNER=$GITHUB_ACTOR
+REPO_NAME=$(basename $(pwd))
+RSS_FEED_URL="https://$GITHUB_ACTOR.github.io/$REPO_NAME/feed.xml"
+echo "FEED URL: $RSS_FEED_URL"
 
 ORGS="github grafana awslabs"
 
@@ -25,8 +27,7 @@ get_issues() {
 (
     echo '<?xml version="1.0" encoding="UTF-8" ?>'
     echo '<rss version="2.0">'
-    printf "<channel>\n<title>Help Wanted</title>\n<description>Help Wanted Issues</description>\n<link>https://lbonanomi.github.io/rss/feed.xml</link>\n"
-
+    printf "<channel>\n<title>Help Wanted</title>\n<description>Help Wanted Issues</description>\n<link>$RSS_FEED_URL</link>\n"
 
     for ORG in $ORGS
     do
@@ -39,4 +40,4 @@ get_issues() {
 CURRENT_SHA=$(curl -s -u :$TOKEN https://api.github.com/repos/lbonanomi/rss/contents/feed.xml | jq .sha | tr -d '"')
 
 # Push feed.xml to Github
-curl -s -u :$TOKEN -X PUT -d '{ "message":"RSS Refresh Activity", "sha":"'$CURRENT_SHA'", "content":"'$(cat feed.xml)'" }' https://api.github.com/repos/lbonanomi/rss/contents/feed.xml
+curl -s -u :$TOKEN -X PUT -d '{ "message":"RSS Refresh Activity", "sha":"'$CURRENT_SHA'", "content":"'$(cat feed.xml)'" }' https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/contents/feed.xml
