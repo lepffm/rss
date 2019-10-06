@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v1 
     - name: Run a one-line script
       run: env
+    - name: execution permissions
+      run: chmod 755 ./build.sh
+    - name: Rebuild RSS XML
+      run: ./build.sh
