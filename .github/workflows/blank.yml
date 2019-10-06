@@ -1,9 +1,8 @@
-name: RSS
+name: Rebuild "Help Wanted" RSS feed
 
 on:
   schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '0/2 * * * *'
+    - cron:  '0/15 * * * *'
 
 jobs:
   build:
@@ -17,5 +16,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: execution permissions
       run: chmod 755 ./build.sh
-    - name: build
+    - name: Rebuild RSS XML
       run: ./build.sh
