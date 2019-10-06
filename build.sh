@@ -37,7 +37,7 @@ get_issues() {
 ) | base64 | tr -d "\n" > feed.xml
 
 # Harvest current SHAof feed.xml
-CURRENT_SHA=$(curl -s -u :$TOKEN https://api.github.com/repos/lbonanomi/rss/contents/feed.xml | jq .sha | tr -d '"')
+CURRENT_SHA=$(curl -s -u :$TOKEN https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/contents/feed.xml | jq .sha | tr -d '"')
 
 # Push feed.xml to Github
 curl -s -u :$TOKEN -X PUT -d '{ "message":"RSS Refresh Activity", "sha":"'$CURRENT_SHA'", "content":"'$(cat feed.xml)'" }' https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/contents/feed.xml
