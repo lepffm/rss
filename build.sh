@@ -26,5 +26,5 @@ get_issues() {
 
 CURRENT_SHA=$(curl -s -u :$TOKEN https://api.github.com/repos/lbonanomi/rss/contents/feed.xml | jq .sha | tr -d '"')
 
-curl -s -u :$TOKEN -X PUT -d '{ "message":"Auto", "sha":"'$CURRENT_SHA'", "content":"'$(cat feed.xml)'" }' https://api.github.com/repos/lbonanomi/rss/contents/feed.xml #| jq .sha
+curl -s -u :$TOKEN -X PUT -d '{ "message":"RSS Refresh Activity", "sha":"'$CURRENT_SHA'", "content":"'$(cat feed.xml)'" }' https://api.github.com/repos/lbonanomi/rss/contents/feed.xml #| jq .sha
 
