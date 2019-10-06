@@ -22,7 +22,8 @@ get_issues() {
 (
     echo '<?xml version="1.0" encoding="UTF-8" ?>'
     echo '<rss version="2.0">'
-    echo '<channel>'
+    printf "<channel>\n<title>Help Wanted</title>\n<description>Help Wanted Issues</description>\n<link>https://lbonanomi.github.io/rss/feed.xml</link>\n"
+
 
     for ORG in $ORGS
     do
