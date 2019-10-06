@@ -2,6 +2,9 @@
 # Get the last 100 issues labelled "Help Wanted" and format as
 # RSS articles
 
+echo "FEED URL: https://$GITHUB_ACTOR.github.io/$(basename $(pwd))/feed.xml"
+
+
 ORGS="github grafana awslabs"
 
 get_issues() {
