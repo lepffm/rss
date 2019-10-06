@@ -41,3 +41,5 @@ CURRENT_SHA=$(curl -s -u :$TOKEN https://api.github.com/repos/lbonanomi/rss/cont
 
 # Push feed.xml to Github
 curl -s -u :$TOKEN -X PUT -d '{ "message":"RSS Refresh Activity", "sha":"'$CURRENT_SHA'", "content":"'$(cat feed.xml)'" }' https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/contents/feed.xml
+
+echo "CURRENT_SHA: $CURRENT_SHA URL: https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/contents/feed.xml"
