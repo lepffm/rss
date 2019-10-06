@@ -6,23 +6,37 @@
 <link>https://lbonanomi.github.io/rss/feed.xml</link>
 <item>
 <title>
-null
+"Fixing C/C++/Objective-C classifications"
 </title>
-<link>https://developer.github.com/v4
+<link>https://github.com/github/linguist/issues/1626
 </link>
 </item>
 <item>
 <title>
-null
+"Travis build fails because of Licensee update"
 </title>
-<link>https://developer.github.com/v4
+<link>https://github.com/github/linguist/issues/3225
 </link>
 </item>
 <item>
 <title>
-null
+"Outstanding Grammar Issues"
 </title>
-<link>https://developer.github.com/v4
+<link>https://github.com/github/linguist/issues/3924
+</link>
+</item>
+<item>
+<title>
+"how can I set the appsync config using swift?"
+</title>
+<link>https://github.com/awslabs/aws-mobile-appsync-sdk-ios/issues/5
+</link>
+</item>
+<item>
+<title>
+"Improve developer documentation on debugging in Carthage based project"
+</title>
+<link>https://github.com/awslabs/aws-mobile-appsync-sdk-ios/issues/176
 </link>
 </item>
 
