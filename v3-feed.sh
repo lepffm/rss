@@ -8,11 +8,16 @@ REPO_OWNER=$GITHUB_ACTOR
 REPO_NAME=$(basename $(pwd))
 RSS_FEED_URL="https://$GITHUB_ACTOR.github.io/$REPO_NAME/feed.xml"
 
+if [[ -z "$TOKEN" ]]
+then
+        echo "Please create a secret called \"TOKEN\" at https://github.com/$REPO_OWNER/$REPO_NAME/settings/secrets with a valid access token"
+        exit 2
+fi
 
 LANGUAGES=$(echo "$LANGUAGES" | tr -s ' ' | tr ' ' '|')
 
 (
-        # Boilerplate
+        # RSS Boilerplate
         #
 
         echo '<?xml version="1.0" encoding="UTF-8" ?>'
@@ -43,7 +48,7 @@ LANGUAGES=$(echo "$LANGUAGES" | tr -s ' ' | tr ' ' '|')
         printf "\n</channel>\n</rss>\n"
 ) | sed -e 's/&/&amp;/g' | base64 | tr -d "\n" > feed.xml
 
-# Harvest current SHAof feed.xml
+# Harvest current SHA of feed.xml
 CURRENT_SHA=$(curl -s -u :$TOKEN https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/contents/feed.xml | jq .sha | tr -d '"')
 
 # Push feed.xml to Github
