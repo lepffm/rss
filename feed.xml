@@ -5,39 +5,72 @@
 <description>Help Wanted Issues</description>
 <link>https://lbonanomi.github.io/rss/feed.xml</link>
 <item>
-<title>
-"Fixing C/C++/Objective-C classifications"
-</title>
-<link>https://github.com/github/linguist/issues/1626
-</link>
+        <title>Add Carthage compatibility badge to the README</title>
+        <link>https://github.com/github/Archimedes/issues/38"</link>
 </item>
 <item>
-<title>
-"Travis build fails because of Licensee update"
-</title>
-<link>https://github.com/github/linguist/issues/3225
-</link>
+        <title>Test that license texts match SPDX plain license texts</title>
+        <link>https://github.com/github/choosealicense.com/issues/636"</link>
 </item>
 <item>
-<title>
-"Outstanding Grammar Issues"
-</title>
-<link>https://github.com/github/linguist/issues/3924
-</link>
+        <title>Annotating license texts with license rules</title>
+        <link>https://github.com/github/choosealicense.com/issues/441"</link>
 </item>
 <item>
-<title>
-"how can I set the appsync config using swift?"
-</title>
-<link>https://github.com/awslabs/aws-mobile-appsync-sdk-ios/issues/5
-</link>
+        <title>Add Free Art License</title>
+        <link>https://github.com/github/choosealicense.com/issues/314"</link>
 </item>
 <item>
-<title>
-"Improve developer documentation on debugging in Carthage based project"
-</title>
-<link>https://github.com/awslabs/aws-mobile-appsync-sdk-ios/issues/176
-</link>
+        <title>I18N</title>
+        <link>https://github.com/github/choosealicense.com/issues/68"</link>
+</item>
+<item>
+        <title>TODO: Configure caching for fast building on travisci</title>
+        <link>https://github.com/github/government.github.com/issues/750"</link>
+</item>
+<item>
+        <title>Alphabetize, other chores should run monthly, open new PRs automatically</title>
+        <link>https://github.com/github/government.github.com/issues/601"</link>
+</item>
+<item>
+        <title>XML report for CI</title>
+        <link>https://github.com/github/licensed/issues/52"</link>
+</item>
+<item>
+        <title>Add a yarn dependency source</title>
+        <link>https://github.com/github/licensed/issues/31"</link>
+</item>
+<item>
+        <title>Turn parallel</title>
+        <link>tests back on for CI</link>
+</item>
+<item>
+        <title>How to use a different puppet configuration (e.g. strict</title>
+        <link>variables)</link>
+</item>
+<item>
+        <title>Invalid event parameters when setting a reminder</title>
+        <link>https://github.com/github/opensourcefriday/issues/105"</link>
+</item>
+<item>
+        <title>delete-empty-repos.sh - Handle Pagination</title>
+        <link>https://github.com/github/platform-samples/issues/190"</link>
+</item>
+<item>
+        <title>Finish migrating to `pathtype` library.</title>
+        <link>https://github.com/github/semantic/issues/288"</link>
+</item>
+<item>
+        <title>Clojure(Script) support</title>
+        <link>https://github.com/github/semantic/issues/217"</link>
+</item>
+<item>
+        <title>Don't connect to kext when invoked with CLI args</title>
+        <link>https://github.com/github/SoftU2F/issues/39"</link>
+</item>
+<item>
+        <title>Add Draft PR support</title>
+        <link>https://github.com/github/VisualStudio/issues/2329"</link>
 </item>
 
 </channel>
