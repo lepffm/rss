@@ -7,7 +7,7 @@
 <item>
         <title>Makefile doesn't yet include 1.14</title>
         <link>https://github.com/awslabs/amazon-eks-ami/issues/333</link>
-        <description>**What would you like to be added**:\r<br>Makefile should include a target for 1.14\r<br>\r<br>**Why is this needed**:\r<br>\r<br>So that I can run `make 1.14`. Support for 1.14 seems to otherwise be in the repo, just not in the Makefile"</description>
+        <description>**What would you like to be added**:<br>Makefile should include a target for 1.14<br><br>**Why is this needed**:<br><br>So that I can run `make 1.14`. Support for 1.14 seems to otherwise be in the repo, just not in the Makefile"</description>
 </item>
 
 <item>
@@ -43,13 +43,13 @@
 <item>
         <title>New Method in ConfigEvent</title>
         <link>https://github.com/awslabs/aws-config-rules/issues/143</link>
-        <description>The configEvent class from aws-lambda-java-events has been updated one of the methods and needs to be updated in the Source code also. \r<br> isEventLeftScope -> getEventLeftScope "</description>
+        <description>The configEvent class from aws-lambda-java-events has been updated one of the methods and needs to be updated in the Source code also. <br> isEventLeftScope -> getEventLeftScope "</description>
 </item>
 
 <item>
         <title>Add support for multiple deployoment OU in nested structure</title>
         <link>https://github.com/awslabs/aws-deployment-framework/issues/130</link>
-        <description>We're looking to implement ADF for our organisation, and at the moment it works pretty well for just our team. In future, if all goes smoothly with our spike, we'll likely be looking to roll this out to multiple teams in the larger group, we wouldn't want to share a deploymen                    t account since we need that separation (and there would be a lot of pipelines in there getting cluttered). However we do still share an Organization (billing reasons, Security, etc), and we think it would be great if ADF could support multiple deployment accounts in a similar structure as listed                     below:\r<br>\r<br>```\r<br>+ root org\r<br>     + team1\r<br>          + deployment\r<br>               - tooling-account (isolated to only allow deployment to units within team1)\r<br>          + production\r<br>               - team1-prod\r<br>          + staging\r<br>               - team1-st                    aging\r<br>     + team2\r<br>          + deployment\r<br>               - tooling-account (isolated to only allow deployment to units within team2)\r<br>          + production\r<br>               - team2-prod\r<br>          + staging\r<br>               - team2-staging\r<br>     + team3\r<br>                              + deployment\r<br>               - tooling-account (isolated to only allow deployment to units within team3)\r<br>          + production\r<br>               - team3-prod\r<br>          + staging\r<br>               - team3-staging\r<br>```\r<br>\r<br>Is this the sort of feature that could b                    e implemented at some point? Its my understanding that currently the tool only supports one deployment account due to the system-parameters upon initialisation.\r<br>\r<br>Another structure that could work, but we aren't sure if its possible/how to implement:\r<br>\r<br>```\r<br>+ root org\r<br>                        + deployment\r<br>         - team1-tooling\r<br>         - team2-tooling\r<br>         - team3-tooling\r<br>     + team1\r<br>          + production\r<br>               - team1-prod\r<br>          + staging\r<br>               - team1-staging\r<br>     + team2\r<br>          + production\r<br>                                   - team2-prod\r<br>          + staging\r<br>               - team2-staging\r<br>     + team3\r<br>          + production\r<br>               - team3-prod\r<br>          + staging\r<br>               - team3-staging\r<br>```"</description>
+        <description>We're looking to implement ADF for our organisation, and at the moment it works pretty well for just our team. In future, if all goes smoothly with our spike, we'll likely be looking to roll this out to multiple teams in the larger group, we wouldn't want to share a deployment account since we need that separation (and there would be a lot of pipelines in there getting cluttered). However we do still share an Organization (billing reasons, Security, etc), and we think it would be great if ADF could support multiple deployment accounts in a similar structure as listed below:<br><br>```<br>+ root org<br>     + team1<br>          + deployment<br>               - tooling-account (isolated to only allow deployment to units within team1)<br>          + production<br>               - team1-prod<br>          + staging<br>               - team1-staging<br>     + team2<br>          + deployment<br>               - tooling-account (isolated to only allow deployment to units within team2)<br>          + production<br>               - team2-prod<br>          + staging<br>               - team2-staging<br>     + team3<br>          + deployment<br>               - tooling-account (isolated to only allow deployment to units within team3)<br>          + production<br>               - team3-prod<br>          + staging<br>               - team3-staging<br>```<br><br>Is this the sort of feature that could be implemented at some point? Its my understanding that currently the tool only supports one deployment account due to the system-parameters upon initialisation.<br><br>Another structure that could work, but we aren't sure if its possible/how to implement:<br><br>```<br>+ root org<br>    + deployment<br>         - team1-tooling<br>         - team2-tooling<br>         - team3-tooling<br>     + team1<br>          + production<br>               - team1-prod<br>          + staging<br>               - team1-staging<br>     + team2<br>          + production<br>               - team2-prod<br>          + staging<br>               - team2-staging<br>     + team3<br>          + production<br>               - team3-prod<br>          + staging<br>               - team3-staging<br>```"</description>
 </item>
 
 <item>
@@ -67,19 +67,19 @@
 <item>
         <title>Feature Request: Auto-detect policy document fragment format</title>
         <link>https://github.com/awslabs/aws-iam-generator/issues/17</link>
-        <description>As a user, I should be able to write my IAM policy statements in either JSON or YAML and the tool should automatically handle either format.\r<br>\r<br>Ideally this would be a distinct feature from the `--format` flag introduced in https://github.com/awslabs/aws-iam-generator                    /pull/13 which IMO should be refactored to influence the CloudFormation output format only.\r<br>"</description>
+        <description>As a user, I should be able to write my IAM policy statements in either JSON or YAML and the tool should automatically handle either format.<br><br>Ideally this would be a distinct feature from the `--format` flag introduced in https://github.com/awslabs/aws-iam-generator/pull/13 which IMO should be refactored to influence the CloudFormation output format only.<br>"</description>
 </item>
 
 <item>
         <title>Create an operator that can detect scenes in video.</title>
         <link>https://github.com/awslabs/aws-media-insights-engine/issues/11</link>
-        <description>This operator will be very useful to help determine different scenes in video.  Applications include searching for ads, credits, slates, scenes.  Another application is that applying ML to unique scenes would save processing time by running ML on still frames, rather than on                     video."</description>
+        <description>This operator will be very useful to help determine different scenes in video.  Applications include searching for ads, credits, slates, scenes.  Another application is that applying ML to unique scenes would save processing time by running ML on still frames, rather than on video."</description>
 </item>
 
 <item>
         <title>Add MediaTailor metrics to Monitor compartment</title>
         <link>https://github.com/awslabs/aws-media-services-application-mapper/issues/54</link>
-        <description>End-user would like to see current metrics for beacon nofilter, beacon ad only, beacon jingles only, if possible.\r<br>"</description>
+        <description>End-user would like to see current metrics for beacon nofilter, beacon ad only, beacon jingles only, if possible.<br>"</description>
 </item>
 
 <item>
@@ -97,7 +97,7 @@
 <item>
         <title>Swagger UI demo</title>
         <link>https://github.com/awslabs/aws-serverless-java-container/issues/222</link>
-        <description>* Implementations: Jersey / Spring / Spring Boot / Spark\r<br>\r<br>## Scenario\r<br>Add the ability to serve a `swagger-ui.html` to the sample applications as mentioned in #214 \r<br>\r<br>## Expected behavior\r<br>Navigating to `/ui/swagger-ui.html` should return the genera                    ted Swagger UI html page."</description>
+        <description>* Implementations: Jersey / Spring / Spring Boot / Spark<br><br>## Scenario<br>Add the ability to serve a `swagger-ui.html` to the sample applications as mentioned in #214 <br><br>## Expected behavior<br>Navigating to `/ui/swagger-ui.html` should return the generated Swagger UI html page."</description>
 </item>
 
 <item>
@@ -121,25 +121,25 @@
 <item>
         <title>Add support for Play framework</title>
         <link>https://github.com/awslabs/aws-serverless-java-container/issues/19</link>
-        <description>Logging the feature request from our Twitter poll: https://twitter.com/sapessi/status/846816218422034432\r<br>\r<br>Add support for the [Play Framework](https://www.playframework.com/)."</description>
+        <description>Logging the feature request from our Twitter poll: https://twitter.com/sapessi/status/846816218422034432<br><br>Add support for the [Play Framework](https://www.playframework.com/)."</description>
 </item>
 
 <item>
         <title>trouble with connecting to dynamodb through Java</title>
         <link>https://github.com/awslabs/dynamodb-janusgraph-storage-backend/issues/233</link>
-        <description>Hi - I have the following Java code which I am trying to use to have Janusgraph connect to the cloud dynamodb (as opposed to the local test version).\r<br>\r<br>import org.apache.commons.configuration.BaseConfiguration;\r<br>import com.amazon.janusgraph.diskstorage.dynamodb.D                    ynamoDBStoreManager;\r<br>import org.janusgraph.core.JanusGraphFactory;\r<br>import org.janusgraph.core.JanusGraph;\r<br>.....\r<br>BaseConfiguration conf = new BaseConfiguration();\r<br>conf.setProperty(\"storage.backend\",\"com.amazon.janusgraph.diskstorage.dynamodb.DynamoDBStoreManager\");\r<b                    r>....JanusGraph graph = JanusGraphFactory.open(conf);\r<br>\r<br>The error I'm getting when trying to run is:\r<br>\"errorMessage\": \"Could not instantiate implementation: com.amazon.janusgraph.diskstorage.dynamodb.DynamoDBStoreManager\",\r<br>....\r<br>\"errorType\": \"java.lang.NoClassDefFoun                    dError\",\r<br>\r<br>Is this a bug or am I missing something? Thought importing com.amazon.janusgraph.diskstorage.dynamodb.DynamoDBStoreManager would be enough - I have dynamodb-janusgraph-storage-backend listed as a dependency in my pom.xml file so everything is compiling just fine.\r<br>\r<br>I                    've found examples of how to use Gremlin with dynamodb/janusgraph but nothing about how to set things up purely in Java. An example would be greatly appreciated."</description>
+        <description>Hi - I have the following Java code which I am trying to use to have Janusgraph connect to the cloud dynamodb (as opposed to the local test version).<br><br>import org.apache.commons.configuration.BaseConfiguration;<br>import com.amazon.janusgraph.diskstorage.dynamodb.DynamoDBStoreManager;<br>import org.janusgraph.core.JanusGraphFactory;<br>import org.janusgraph.core.JanusGraph;<br>.....<br>BaseConfiguration conf = new BaseConfiguration();<br>conf.setProperty(\"storage.backend\",\"com.amazon.janusgraph.diskstorage.dynamodb.DynamoDBStoreManager\");<br>....JanusGraph graph = JanusGraphFactory.open(conf);<br><br>The error I'm getting when trying to run is:<br>\"errorMessage\": \"Could not instantiate implementation: com.amazon.janusgraph.diskstorage.dynamodb.DynamoDBStoreManager\",<br>....<br>\"errorType\": \"java.lang.NoClassDefFoundError\",<br><br>Is this a bug or am I missing something? Thought importing com.amazon.janusgraph.diskstorage.dynamodb.DynamoDBStoreManager would be enough - I have dynamodb-janusgraph-storage-backend listed as a dependency in my pom.xml file so everything is compiling just fine.<br><br>I've found examples of how to use Gremlin with dynamodb/janusgraph but nothing about how to set things up purely in Java. An example would be greatly appreciated."</description>
 </item>
 
 <item>
         <title>coio is not build in cargo.io migrate to tokyo the tls module</title>
         <link>https://github.com/awslabs/flowgger/issues/45</link>
-        <description>to unlock https://github.com/awslabs/flowgger/issues/32 coio has to go\r<br>\r<br>it's used in the TLS module as a scheduler and to control tcplistener and stream.\r<br>\r<br>The package doesn't seem to have been touched for at least an year:\r<br>https://github.com/zonyitoo/                    coio-rs\r<br>\r<br>"</description>
+        <description>to unlock https://github.com/awslabs/flowgger/issues/32 coio has to go<br><br>it's used in the TLS module as a scheduler and to control tcplistener and stream.<br><br>The package doesn't seem to have been touched for at least an year:<br>https://github.com/zonyitoo/coio-rs<br><br>"</description>
 </item>
 
 <item>
         <title>Enhance kafka commit</title>
         <link>https://github.com/awslabs/flowgger/issues/26</link>
-        <description>Hello,\r<br>\r<br>I think, it could be very useful to enhance \"Kafka output\" with a kind of timer option and associate it with the actual </description>
+        <description>Hello,<br><br>I think, it could be very useful to enhance \"Kafka output\" with a kind of timer option and associate it with the actual </description>
 </item>
 
 <item>
@@ -163,31 +163,31 @@
 <item>
         <title>Keras-MXNet RNN CPU performance is slower</title>
         <link>https://github.com/awslabs/keras-apache-mxnet/issues/99</link>
-        <description>Keras-MXNet is slower on CPU.\r<br>See early benchmark results here - https://github.com/awslabs/keras-apache-mxnet/blob/master/benchmark/benchmark</description>
+        <description>Keras-MXNet is slower on CPU.<br>See early benchmark results here - https://github.com/awslabs/keras-apache-mxnet/blob/master/benchmark/benchmark</description>
 </item>
 
 <item>
         <title>Supporting MTCNN style model serving?</title>
         <link>https://github.com/awslabs/mxnet-model-server/issues/238</link>
-        <description>Hi there, \r<br>\r<br>    Great framework for serving mxnet based models!\r<br>\r<br>    I wonder if there is any suggestions on supporting multi-stage models such as MTCNN, https://github.com/pangyupo/mxnet</description>
+        <description>Hi there, <br><br>    Great framework for serving mxnet based models!<br><br>    I wonder if there is any suggestions on supporting multi-stage models such as MTCNN, https://github.com/pangyupo/mxnet</description>
 </item>
 
 <item>
         <title>Add heartbeat API to reference server</title>
         <link>https://github.com/awslabs/speke-reference-server/issues/13</link>
-        <description>https://docs.aws.amazon.com/speke/latest/documentation/heartbeat.html\r<br>\r<br>GET https://[server]/[stage]/heartbeat\r<br>\r<br>\r<br>"</description>
+        <description>https://docs.aws.amazon.com/speke/latest/documentation/heartbeat.html<br><br>GET https://[server]/[stage]/heartbeat<br><br><br>"</description>
 </item>
 
 <item>
         <title>Lambda zip for keyserver not updated during stack update</title>
         <link>https://github.com/awslabs/speke-reference-server/issues/10</link>
-        <description>Need to make CloudFormation aware that the keyserver zip has changed and requires an update. Right now CF doesn't know about a code change since only the zip contents change.\r<br>"</description>
+        <description>Need to make CloudFormation aware that the keyserver zip has changed and requires an update. Right now CF doesn't know about a code change since only the zip contents change.<br>"</description>
 </item>
 
 <item>
         <title>ClientLambdaFunction</title>
         <link>https://github.com/awslabs/speke-reference-server/issues/1</link>
-        <description>HI,\r<br>\r<br>I downloaded the SPEKE reference implementation and setup the server using the template provided. I can't seem to find the ClientLambdaFunction to set the following parameter:\r<br>\r<br>`CLIENT</description>
+        <description>HI,<br><br>I downloaded the SPEKE reference implementation and setup the server using the template provided. I can't seem to find the ClientLambdaFunction to set the following parameter:<br><br>`CLIENT</description>
 </item>
 
 
