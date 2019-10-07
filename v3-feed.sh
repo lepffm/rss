@@ -38,8 +38,8 @@ LANGUAGES=$(echo "$LANGUAGES" | tr -s ' ' | tr ' ' '|')
                                 # Only tell me about repos that contain languages I use
                                 curl -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/languages" | jq . | egrep -qi "$LANGUAGES" && (
                                         curl -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/issues" |\
-                                         jq '.[] | "\(.labels[].name)_\(.title)_\(.html_url)"' |\
-                                         awk -F"_" '/help wanted/ { printf "<item>\n\t<title>"$2"</title>\n\t<link>"$3"</link>\n</item>\n" }'
+                                         jq '.[] | "\(.labels[].name)_\(.title)_\(.html_url)_\(.body)"' |\
+                                         awk -F"_" '/help wanted/ { printf "<item>\n\t<title>"$2"</title>\n\t<link>"$3"</link>\n<description>"$4"</description>\n</item>\n" }'
                                 )
                         done
                 done
