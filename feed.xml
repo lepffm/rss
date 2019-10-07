@@ -101,7 +101,7 @@
 	<link>https://github.com/grafana/loki/issues/1093"</link>
 </item>
 <item>
-	<title>[helm] Deploying loki-stack with prometheus & grafana fails in k8s 1.16</title>
+	<title>[helm] Deploying loki-stack with prometheus &amp; grafana fails in k8s 1.16</title>
 	<link>https://github.com/grafana/loki/issues/1080"</link>
 </item>
 <item>
