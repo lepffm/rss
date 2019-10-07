@@ -105,10 +105,6 @@
 	<link>https://github.com/grafana/loki/issues/1080"</link>
 </item>
 <item>
-	<title>Easier way to select the logForwarder in the loki-stack helm chart</title>
-	<link>https://github.com/grafana/loki/issues/1075"</link>
-</item>
-<item>
 	<title>Makefile doesn't yet include 1.14</title>
 	<link>https://github.com/awslabs/amazon-eks-ami/issues/333"</link>
 </item>
