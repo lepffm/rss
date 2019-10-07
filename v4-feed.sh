@@ -1,3 +1,5 @@
+# SAID PLAINLY THIS CODE DOESN'T WORK PROPERLY AT THIS TIME. THE V3-FEED IS SCHEDULED AS AN ACTION.
+
 # Get the last 100 updated repos under the defined organizations,
 # Get the last 100 issues labelled "Help Wanted" and format as
 # RSS articles
