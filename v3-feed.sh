@@ -38,12 +38,10 @@ LANGUAGES=$(echo "$LANGUAGES" | tr -s ' ' | tr ' ' '|')
                                 )
                         done
                 done
-
-                #curl -s -u :$TOKEN "https://api.github.com/users/$ORG/repos" | jq '.[] | "\(.open_issues) \(.issues_url)"' | tr -d '"' | awk '$1 > 0 { print $0}'
         done
 
         printf "\n</channel>\n</rss>\n"
-) | base64 | tr -d "\n" > feed.xml
+) | sed -e 's/&/&amp;/g' | base64 | tr -d "\n" > feed.xml
 
 # Harvest current SHAof feed.xml
 CURRENT_SHA=$(curl -s -u :$TOKEN https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/contents/feed.xml | jq .sha | tr -d '"')
