@@ -14,7 +14,9 @@
 <item>
 	<title>Test that license texts match SPDX plain license texts</title>
 	<link>https://github.com/github/choosealicense.com/issues/636</link>
-<description>We 
+	
+<description><![CDATA[ ' .nl2br($desc_data). ' 
+We 
 	should 
 	have 
 	a 
@@ -23,7 +25,7 @@
 	each 
 	license 
 	text 
-	in `</description>
+	in ]]></description>
 </item>
 <item>
 	<title>Annotating license texts with license rules</title>
