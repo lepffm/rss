@@ -77,10 +77,6 @@
 	<link>https://github.com/grafana/fake-data-gen/issues/8"</link>
 </item>
 <item>
-	<title>[Broken] Annotation popin un graph view not fully displayed.</title>
-	<link>https://github.com/grafana/grafana/issues/19631"</link>
-</item>
-<item>
 	<title>Self signed certificates</title>
 	<link>https://github.com/grafana/grafana-image-renderer/issues/33"</link>
 </item>
@@ -103,6 +99,10 @@
 <item>
 	<title>[helm] Deploying loki-stack with prometheus &amp; grafana fails in k8s 1.16</title>
 	<link>https://github.com/grafana/loki/issues/1080"</link>
+</item>
+<item>
+	<title>Easier way to select the logForwarder in the loki-stack helm chart</title>
+	<link>https://github.com/grafana/loki/issues/1075"</link>
 </item>
 <item>
 	<title>Makefile doesn't yet include 1.14</title>
