@@ -1,0 +1,21 @@
+name: Rebuild "Help Wanted" RSS feed
+
+on:
+  schedule:
+    - cron:  '0 0,4,8,12,16,20 * * *'
+#     - cron:  '*/2 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+        
+    env:
+      TOKEN: ${{ secrets.TOKEN }}      
+
+    steps:
+    
+    - uses: actions/checkout@v1
+    - name: execution permissions
+      run: chmod 755 ./v3-feed.sh
+    - name: Rebuild RSS XML
+      run: ./v3-feed.sh
