@@ -5,72 +5,232 @@
 <description>Help Wanted Issues</description>
 <link>https://lbonanomi.github.io/rss/feed.xml</link>
 <item>
-        <title>Add Carthage compatibility badge to the README</title>
-        <link>https://github.com/github/Archimedes/issues/38"</link>
+	<title>Add Carthage compatibility badge to the README</title>
+	<link>https://github.com/github/Archimedes/issues/38"</link>
 </item>
 <item>
-        <title>Test that license texts match SPDX plain license texts</title>
-        <link>https://github.com/github/choosealicense.com/issues/636"</link>
+	<title>Test that license texts match SPDX plain license texts</title>
+	<link>https://github.com/github/choosealicense.com/issues/636"</link>
 </item>
 <item>
-        <title>Annotating license texts with license rules</title>
-        <link>https://github.com/github/choosealicense.com/issues/441"</link>
+	<title>Annotating license texts with license rules</title>
+	<link>https://github.com/github/choosealicense.com/issues/441"</link>
 </item>
 <item>
-        <title>Add Free Art License</title>
-        <link>https://github.com/github/choosealicense.com/issues/314"</link>
+	<title>Add Free Art License</title>
+	<link>https://github.com/github/choosealicense.com/issues/314"</link>
 </item>
 <item>
-        <title>I18N</title>
-        <link>https://github.com/github/choosealicense.com/issues/68"</link>
+	<title>I18N</title>
+	<link>https://github.com/github/choosealicense.com/issues/68"</link>
 </item>
 <item>
-        <title>TODO: Configure caching for fast building on travisci</title>
-        <link>https://github.com/github/government.github.com/issues/750"</link>
+	<title>TODO: Configure caching for fast building on travisci</title>
+	<link>https://github.com/github/government.github.com/issues/750"</link>
 </item>
 <item>
-        <title>Alphabetize, other chores should run monthly, open new PRs automatically</title>
-        <link>https://github.com/github/government.github.com/issues/601"</link>
+	<title>Alphabetize, other chores should run monthly, open new PRs automatically</title>
+	<link>https://github.com/github/government.github.com/issues/601"</link>
 </item>
 <item>
-        <title>XML report for CI</title>
-        <link>https://github.com/github/licensed/issues/52"</link>
+	<title>XML report for CI</title>
+	<link>https://github.com/github/licensed/issues/52"</link>
 </item>
 <item>
-        <title>Add a yarn dependency source</title>
-        <link>https://github.com/github/licensed/issues/31"</link>
+	<title>Add a yarn dependency source</title>
+	<link>https://github.com/github/licensed/issues/31"</link>
 </item>
 <item>
-        <title>Turn parallel</title>
-        <link>tests back on for CI</link>
+	<title>Turn parallel</title>
+	<link>tests back on for CI</link>
 </item>
 <item>
-        <title>How to use a different puppet configuration (e.g. strict</title>
-        <link>variables)</link>
+	<title>How to use a different puppet configuration (e.g. strict</title>
+	<link>variables)</link>
 </item>
 <item>
-        <title>Invalid event parameters when setting a reminder</title>
-        <link>https://github.com/github/opensourcefriday/issues/105"</link>
+	<title>Invalid event parameters when setting a reminder</title>
+	<link>https://github.com/github/opensourcefriday/issues/105"</link>
 </item>
 <item>
-        <title>delete-empty-repos.sh - Handle Pagination</title>
-        <link>https://github.com/github/platform-samples/issues/190"</link>
+	<title>delete-empty-repos.sh - Handle Pagination</title>
+	<link>https://github.com/github/platform-samples/issues/190"</link>
 </item>
 <item>
-        <title>Finish migrating to `pathtype` library.</title>
-        <link>https://github.com/github/semantic/issues/288"</link>
+	<title>Finish migrating to `pathtype` library.</title>
+	<link>https://github.com/github/semantic/issues/288"</link>
 </item>
 <item>
-        <title>Clojure(Script) support</title>
-        <link>https://github.com/github/semantic/issues/217"</link>
+	<title>Clojure(Script) support</title>
+	<link>https://github.com/github/semantic/issues/217"</link>
 </item>
 <item>
-        <title>Don't connect to kext when invoked with CLI args</title>
-        <link>https://github.com/github/SoftU2F/issues/39"</link>
+	<title>Don't connect to kext when invoked with CLI args</title>
+	<link>https://github.com/github/SoftU2F/issues/39"</link>
 </item>
 <item>
-        <title>Add Draft PR support</title>
-        <link>https://github.com/github/VisualStudio/issues/2329"</link>
+	<title>Add Draft PR support</title>
+	<link>https://github.com/github/VisualStudio/issues/2329"</link>
+</item>
+<item>
+	<title>elastic: write log entries to logs indices using a correct mapping for the @timestamp field</title>
+	<link>https://github.com/grafana/fake-data-gen/issues/8"</link>
+</item>
+<item>
+	<title>[Broken] Annotation popin un graph view not fully displayed.</title>
+	<link>https://github.com/grafana/grafana/issues/19631"</link>
+</item>
+<item>
+	<title>Self signed certificates</title>
+	<link>https://github.com/grafana/grafana-image-renderer/issues/33"</link>
+</item>
+<item>
+	<title>upgrade to schemaVersion 16</title>
+	<link>https://github.com/grafana/grafonnet-lib/issues/66"</link>
+</item>
+<item>
+	<title>Template current value does not work with multivalue template variables</title>
+	<link>https://github.com/grafana/grafonnet-lib/issues/65"</link>
+</item>
+<item>
+	<title>docs: Labels recommendations</title>
+	<link>https://github.com/grafana/loki/issues/1117"</link>
+</item>
+<item>
+	<title>Timestamp stage add a fudged timestamp for lines missing a timestamp</title>
+	<link>https://github.com/grafana/loki/issues/1093"</link>
+</item>
+<item>
+	<title>[helm] Deploying loki-stack with prometheus & grafana fails in k8s 1.16</title>
+	<link>https://github.com/grafana/loki/issues/1080"</link>
+</item>
+<item>
+	<title>Easier way to select the logForwarder in the loki-stack helm chart</title>
+	<link>https://github.com/grafana/loki/issues/1075"</link>
+</item>
+<item>
+	<title>Makefile doesn't yet include 1.14</title>
+	<link>https://github.com/awslabs/amazon-eks-ami/issues/333"</link>
+</item>
+<item>
+	<title>Deduplicate the command-line parameters</title>
+	<link>https://github.com/awslabs/amazon-pollexy/issues/2"</link>
+</item>
+<item>
+	<title>Add configuration of the config Aggregator as part of the deployment</title>
+	<link>https://github.com/awslabs/aws-config-engine-for-compliance-as-code/issues/31"</link>
+</item>
+<item>
+	<title>New rule request: VPC</title>
+	<link>SG</link>
+</item>
+<item>
+	<title>New rule request: VPC</title>
+	<link>AUTHORIZED</link>
+</item>
+<item>
+	<title>New rule request: VPC</title>
+	<link>SG</link>
+</item>
+<item>
+	<title>New Method in ConfigEvent</title>
+	<link>https://github.com/awslabs/aws-config-rules/issues/143"</link>
+</item>
+<item>
+	<title>Add support for multiple deployoment OU in nested structure</title>
+	<link>https://github.com/awslabs/aws-deployment-framework/issues/130"</link>
+</item>
+<item>
+	<title>Functions: Cannot specify 'Pinned' value</title>
+	<link>https://github.com/awslabs/aws-greengrass-group-setup/issues/9"</link>
+</item>
+<item>
+	<title>Check for valid regions in GroupCommands</title>
+	<link>https://github.com/awslabs/aws-greengrass-group-setup/issues/2"</link>
+</item>
+<item>
+	<title>Feature Request: Auto-detect policy document fragment format</title>
+	<link>https://github.com/awslabs/aws-iam-generator/issues/17"</link>
+</item>
+<item>
+	<title>Create an operator that can detect scenes in video.</title>
+	<link>https://github.com/awslabs/aws-media-insights-engine/issues/11"</link>
+</item>
+<item>
+	<title>Add MediaTailor metrics to Monitor compartment</title>
+	<link>https://github.com/awslabs/aws-media-services-application-mapper/issues/54"</link>
+</item>
+<item>
+	<title>Add documentation for H/A configuration</title>
+	<link>https://github.com/awslabs/aws-media-services-application-mapper/issues/9"</link>
+</item>
+<item>
+	<title>Add documentation for MSAM REST API</title>
+	<link>https://github.com/awslabs/aws-media-services-application-mapper/issues/8"</link>
+</item>
+<item>
+	<title>Swagger UI demo</title>
+	<link>https://github.com/awslabs/aws-serverless-java-container/issues/222"</link>
+</item>
+<item>
+	<title>Dropwizard example?</title>
+	<link>https://github.com/awslabs/aws-serverless-java-container/issues/128"</link>
+</item>
+<item>
+	<title>Apache Camel route is supported?</title>
+	<link>https://github.com/awslabs/aws-serverless-java-container/issues/58"</link>
+</item>
+<item>
+	<title>Support for Jooby framework</title>
+	<link>https://github.com/awslabs/aws-serverless-java-container/issues/46"</link>
+</item>
+<item>
+	<title>Add support for Play framework</title>
+	<link>https://github.com/awslabs/aws-serverless-java-container/issues/19"</link>
+</item>
+<item>
+	<title>trouble with connecting to dynamodb through Java</title>
+	<link>https://github.com/awslabs/dynamodb-janusgraph-storage-backend/issues/233"</link>
+</item>
+<item>
+	<title>coio is not build in cargo.io migrate to tokyo the tls module</title>
+	<link>https://github.com/awslabs/flowgger/issues/45"</link>
+</item>
+<item>
+	<title>Enhance kafka commit</title>
+	<link>https://github.com/awslabs/flowgger/issues/26"</link>
+</item>
+<item>
+	<title>Question: netflow inputs?</title>
+	<link>https://github.com/awslabs/flowgger/issues/14"</link>
+</item>
+<item>
+	<title>[question] any plans to be able to push directly to elasticsearch ?</title>
+	<link>https://github.com/awslabs/flowgger/issues/11"</link>
+</item>
+<item>
+	<title>Metrics</title>
+	<link>https://github.com/awslabs/flowgger/issues/1"</link>
+</item>
+<item>
+	<title>Keras-MXNet RNN CPU performance is slower</title>
+	<link>https://github.com/awslabs/keras-apache-mxnet/issues/99"</link>
+</item>
+<item>
+	<title>Supporting MTCNN style model serving?</title>
+	<link>https://github.com/awslabs/mxnet-model-server/issues/238"</link>
+</item>
+<item>
+	<title>Add heartbeat API to reference server</title>
+	<link>https://github.com/awslabs/speke-reference-server/issues/13"</link>
+</item>
+<item>
+	<title>Lambda zip for keyserver not updated during stack update</title>
+	<link>https://github.com/awslabs/speke-reference-server/issues/10"</link>
+</item>
+<item>
+	<title>ClientLambdaFunction</title>
+	<link>https://github.com/awslabs/speke-reference-server/issues/1"</link>
 </item>
 
 </channel>
