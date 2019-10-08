@@ -161,12 +161,6 @@
 </item>
 
 <item>
-	<title>Makefile doesn't yet include 1.14</title>
-	<link>https://github.com/awslabs/amazon-eks-ami/issues/333</link>
-	<description><![CDATA[**What would you like to be added**:<br/>Makefile should include a target for 1.14<br/><br/>**Why is this needed**:<br/><br/>So that I can run `make 1.14`. Support for 1.14 seems to otherwise be in the repo, just not in the Makefile" ]]></description>
-</item>
-
-<item>
 	<title>Deduplicate the command-line parameters</title>
 	<link>https://github.com/awslabs/amazon-pollexy/issues/2</link>
 	<description><![CDATA[Several of the click options/arguments are shared across difference commands . . . need to de-dupe this code as much as possible." ]]></description>
