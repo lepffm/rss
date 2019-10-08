@@ -2,13 +2,18 @@
 <rss version="2.0">
 <channel>
 <title>Help Wanted</title>
-<description>Help Wanted Issues</description>
+<description>Other</description>
 <link>https://lbonanomi.github.io/rss/feed.xml</link>
 <item>
 	<title>Add Carthage compatibility badge to the README</title>
 	<link>https://github.com/github/Archimedes/issues/38</link>
 <description>Using [these instructions](https://github.com/Carthage/Carthage/blob/7a0153cc164e301c46527f6e20c886728a0dc218/README.md#declare-your-compatibility).\n"</description>
 </item>
+
+	
+<channel>
+<title>Help Wanted</title>
+<description>Help Wanted Issues</description>	
 <item>
 	<title>Test that license texts match SPDX plain license texts</title>
 	<link>https://github.com/github/choosealicense.com/issues/636</link>
