@@ -7,7 +7,7 @@
 <item>
         <title>Makefile doesn't yet include 1.14</title>
         <link>https://github.com/awslabs/amazon-eks-ami/issues/333</link>
-        <description>**What would you like to be added**:\r<br>Makefile should include a target for 1.14\r<br>\r<br>**Why is this needed**:\r<br>\r<br>So that I can run `make 1.14`. Support for 1.14 seems to otherwise be in the repo, just not in the Makefile"</description>
+        <description>**What would you like to be added**:\r<br>Makefile should include a target for 1.14\r<br>\r**Why is this needed**:\r<br>\r<br>So that I can run `make 1.14`. Support for 1.14 seems to otherwise be in the repo, just not in the Makefile"</description>
 </item>
 
 <item>
