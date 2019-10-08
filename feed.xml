@@ -7,25 +7,12 @@
 <item>
 	<title>Add Carthage compatibility badge to the README</title>
 	<link>https://github.com/github/Archimedes/issues/38</link>
-<description>Using 
-	[these instructions](https://github.com/Carthage/Carthage/blob/7a0153cc164e301c46527f6e20c886728a0dc218/README.md#declare-your-compatibility).
-	"</description>
+<description>Using [these instructions](https://github.com/Carthage/Carthage/blob/7a0153cc164e301c46527f6e20c886728a0dc218/README.md#declare-your-compatibility).\n"</description>
 </item>
 <item>
 	<title>Test that license texts match SPDX plain license texts</title>
 	<link>https://github.com/github/choosealicense.com/issues/636</link>
-	
-<description><![CDATA[ ' .nl2br($desc_data). ' 
-We 
-	should 
-	have 
-	a 
-	test 
-	that 
-	each 
-	license 
-	text 
-	in ]]></description>
+<description>We should have a test that each license text in `</description>
 </item>
 <item>
 	<title>Annotating license texts with license rules</title>
