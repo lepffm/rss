@@ -38,7 +38,7 @@ LANGUAGES=$(echo "$LANGUAGES" | tr -s ' ' | tr ' ' '|')
                                 curl -k -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/languages" | jq . | egrep -qi "$LANGUAGES" && (
                                         curl -k -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/issues" |\
                                          jq '.[] | "\(.labels[].name)_\(.title)_\(.html_url)_\(.body)"' |\
-                                         awk -F"_" '/help wanted/ && $3 ~ /http/ { gsub(/\\n/, "<br\/>", $4); print "<item>\n\t<title>"$2"</title>\n\t<link>"$3"</link>\n\t<description><![CDATA["$4" ]]></description>\n</item>\n" }' 2>/dev/null | tr -d "\r"
+                                         awk -F"_" '/help wanted/ && $3 ~ /http/ { gsub(/\\n/, "<br\/>", $4); print "<item>\n\t<title>"$2"</title>\n\t<link>"$3"</link>\n\t<description><![CDATA["$4" ]]></description>\n</item>\n" }' 2>/dev/null | perl -e 'while(<>){$_=~s/\\r//g;print}'
                                 )
                         done
                 done
