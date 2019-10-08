@@ -24,22 +24,21 @@ LANGUAGES=$(echo "$LANGUAGES" | tr -s ' ' | tr ' ' '|')
         echo '<rss version="2.0">'
         printf "<channel>\n<title>Help Wanted</title>\n<description>Help Wanted Issues</description>\n<link>https://lbonanomi.github.io/rss/feed.xml</link>\n"
 
-
         for ORG in $ORGS
         do
                 #Plumb
-                STOP=$(curl -v -u :$TOKEN "https://api.github.com/users/$ORG/repos" -o /dev/null 2>&1 | tr [:punct:] ' ' | awk '/next/ { print $21 }')
+                STOP=$(curl -k -v -u :$TOKEN "https://api.github.com/users/$ORG/repos" -o /dev/null 2>&1 | tr [:punct:] ' ' | awk '/next/ { print $21 }')
 
                 for PAGE in $(seq 1 $STOP)
                 do
                         # Reduce to repositories with issues
-                        curl -s -u :$TOKEN "https://api.github.com/users/$ORG/repos?page=$PAGE" | jq '.[] | "\(.open_issues) \(.full_name)"' | tr -d '"' | awk '$1 > 0 { print $2}' | while read ISSUED
+                        curl -k -s -u :$TOKEN "https://api.github.com/users/$ORG/repos?page=$PAGE" | jq '.[] | "\(.open_issues) \(.full_name)"' | tr -d '"' | awk '$1 > 0 { print $2}' | while read ISSUED
                         do
                                 # Only tell me about repos that contain languages I use
-                                curl -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/languages" | jq . | egrep -qi "$LANGUAGES" && (
-                                        curl -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/issues" |\
+                                curl -k -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/languages" | jq . | egrep -qi "$LANGUAGES" && (
+                                        curl -k -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/issues" |\
                                          jq '.[] | "\(.labels[].name)_\(.title)_\(.html_url)_\(.body)"' |\
-                                         awk -F"_" '/help wanted/ { printf "<item>\n\t<title>"$2"</title>\n\t<link>"$3"</link>\n<description>"$4"</description>\n</item>\n" }'
+                                         awk -F"_" '/help wanted/ && $3 ~ /http/ { gsub(/\\n/, "<br\/>", $4); print "<item>\n\t<title>"$2"</title>\n\t<link>"$3"</link>\n\t<description><![CDATA["$4" ]]></description>\n</item>\n" }' 2>/dev/null | tr -d "\r"
                                 )
                         done
                 done
