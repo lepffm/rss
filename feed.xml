@@ -131,6 +131,12 @@
 </item>
 
 <item>
+	<title>[helm] Deploying loki-stack with prometheus &amp; grafana fails in k8s 1.16</title>
+	<link>https://github.com/grafana/loki/issues/1080</link>
+	<description><![CDATA[**Describe the bug**<br/>Due to deprecated `apiVersion`s removed in 1.16, the prometheus &amp; grafana dependencies fail to install.<br/><br/>`stable/grafana` is fixed (currently 3.8.15) but `stable/prometheus` remains broken, pending helm/charts#17268.<br/><br/>**To Reproduce**<br/><br/>1. `helm install loki/loki-stack --set=grafana.enabled=true,prometheus.enabled=true`<br/><br/><br/>**Expected behavior**<br/>Loki, grafana, and prometheus installed.<br/><br/>**Environment:**<br/> - Infrastructure: kubernetes 1.16<br/> - Deployment tool: helm<br/><br/>**Screenshots, promtail config, or terminal output**<br/><br/>Above repro fails:<br/>> Error: apiVersion \"apps/v1beta2\" in loki-stack/charts/grafana/templates/deployment.yaml is not available<br/><br/><br/>Full errors (from `helm template | kubectl apply -f -`):<br/>```<br/>unable to recognize \"STDIN\": no matches for kind \"DaemonSet\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"apps/v1beta2\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"PodSecurityPolicy\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"PodSecurityPolicy\" in version \"extensions/v1beta1\"<br/>```<br/><br/>The two policies are fixed by using `grafana==3.8.15`, but the remaining issues will require helm/charts#17268." ]]></description>
+</item>
+
+<item>
 	<title>Let CLI help messages accord to the guidelines</title>
 	<link>https://github.com/grafana/tanka/issues/91</link>
 	<description><![CDATA[There are guidelines how usage strings on the CLI should be formatted: https://en.wikipedia.org/wiki/Command-line ]]></description>
