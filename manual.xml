@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
 <title>Help Wanted</title>
@@ -20,24 +20,6 @@
         <title>Add configuration of the config Aggregator as part of the deployment</title>
         <link>https://github.com/awslabs/aws-config-engine-for-compliance-as-code/issues/31</link>
         <description><![CDATA[" ]]></description>
-</item>
-
-<item>
-        <title>New rule request: VPC</title>
-        <link>SG</link>
-        <description><![CDATA[INBOUND ]]></description>
-</item>
-
-<item>
-        <title>New rule request: VPC</title>
-        <link>AUTHORIZED</link>
-        <description><![CDATA[PEERING ]]></description>
-</item>
-
-<item>
-        <title>New rule request: VPC</title>
-        <link>SG</link>
-        <description><![CDATA[OUTBOUND ]]></description>
 </item>
 
 <item>
