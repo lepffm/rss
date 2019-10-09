@@ -89,12 +89,6 @@
 </item>
 
 <item>
-	<title>PowerShell Support?</title>
-	<link>https://github.com/github/semantic/issues/144</link>
-	<description><![CDATA[Any chance we can get PowerShell support for this?" ]]></description>
-</item>
-
-<item>
 	<title>Don't connect to kext when invoked with CLI args</title>
 	<link>https://github.com/github/SoftU2F/issues/39</link>
 	<description><![CDATA[We try to connect to the kext when the app starts ([code](https://github.com/github/SoftU2F/blob/45825a5bd6e6bad7ae9bd681c8584cbcb6e7fb7b/SoftU2FTool/U2FHID.swift#L24)). This also happens when the app is launched from the command line (Eg. for deleting/listing registrations). If the app is already running in the background we'll get an error because the kext only allows one connection. This error is surfaced to the user, which is confusing. We should not connect to the kext unless we need to." ]]></description>
@@ -140,6 +134,18 @@
 	<title>Timestamp stage add a fudged timestamp for lines missing a timestamp</title>
 	<link>https://github.com/grafana/loki/issues/1093</link>
 	<description><![CDATA[If using the timestamp stage and processing multi-line log lines, (or log lines that might not have a timestamp), the behavior could be a bit unpredictable.   <br/><br/>If the timestamp stage fails to match the timestamp, the promtail system time will be used for the log line, this creates a race between the last processed log lines timestamp and the system time, potentially leading to Loki rejecting the log line which had no timestamp as being older than the previous, or possibly the next log line with a timestamp being rejected if it's timestamp is older than what the system time applied was.<br/><br/>I am suggesting an option be added to the timestamp stage to allow fudging a timestamp onto log lines which do not have one.  The stage should keep track of the previous lines timestamp and if the next line coming in doesn't have a timestamp, increment the previous timestamp by one nanosecond and use that as the timestamp.<br/><br/>Fudging a timestamp is not great and could potentially lead to problems however, with nanosecond precision I would hope this to be very unlikely.<br/><br/>I also think the default for this behavior should be enabled, with an option to disable it" ]]></description>
+</item>
+
+<item>
+	<title>[helm] Deploying loki-stack with prometheus &amp; grafana fails in k8s 1.16</title>
+	<link>https://github.com/grafana/loki/issues/1080</link>
+	<description><![CDATA[**Describe the bug**<br/>Due to deprecated `apiVersion`s removed in 1.16, the prometheus &amp; grafana dependencies fail to install.<br/><br/>`stable/grafana` is fixed (currently 3.8.15) but `stable/prometheus` remains broken, pending helm/charts#17268.<br/><br/>**To Reproduce**<br/><br/>1. `helm install loki/loki-stack --set=grafana.enabled=true,prometheus.enabled=true`<br/><br/><br/>**Expected behavior**<br/>Loki, grafana, and prometheus installed.<br/><br/>**Environment:**<br/> - Infrastructure: kubernetes 1.16<br/> - Deployment tool: helm<br/><br/>**Screenshots, promtail config, or terminal output**<br/><br/>Above repro fails:<br/>> Error: apiVersion \"apps/v1beta2\" in loki-stack/charts/grafana/templates/deployment.yaml is not available<br/><br/><br/>Full errors (from `helm template | kubectl apply -f -`):<br/>```<br/>unable to recognize \"STDIN\": no matches for kind \"DaemonSet\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"apps/v1beta2\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"PodSecurityPolicy\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"PodSecurityPolicy\" in version \"extensions/v1beta1\"<br/>```<br/><br/>The two policies are fixed by using `grafana==3.8.15`, but the remaining issues will require helm/charts#17268." ]]></description>
+</item>
+
+<item>
+	<title>Easier way to select the logForwarder in the loki-stack helm chart</title>
+	<link>https://github.com/grafana/loki/issues/1075</link>
+	<description><![CDATA[As of today you can choose which log forwarder you want to use within the [loki-stack chart](https://github.com/grafana/loki/tree/master/production/helm/loki-stack) by doing:<br/><br/>For promtail:<br/><br/>```<br/>helm upgrade --install loki loki/loki-stack<br/>```<br/><br/>For fluent-bit:<br/><br/>```bash<br/>helm upgrade --install loki loki/loki-stack \\<br/>    --set fluent-bit.enabled=true,promtail.enabled=false<br/>```<br/><br/>It would be great if we could instead use property in the loki-stack chart values as such:<br/><br/>```json<br/>logForwarder: [ promtail | fluent-bit | none ]<br/>```<br/><br/>This way we could install the log forwarder of our choice using:<br/><br/>```<br/>helm upgrade --install loki loki/loki-stack \\<br/>    --set logForwarder=fluent-bit<br/>```<br/><br/>/cc @joe-elliott " ]]></description>
 </item>
 
 <item>
