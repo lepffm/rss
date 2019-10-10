@@ -83,12 +83,6 @@
 </item>
 
 <item>
-	<title>C# support</title>
-	<link>https://github.com/github/semantic/issues/156</link>
-	<description><![CDATA[A lot of people asked for this on Twitter." ]]></description>
-</item>
-
-<item>
 	<title>Don't connect to kext when invoked with CLI args</title>
 	<link>https://github.com/github/SoftU2F/issues/39</link>
 	<description><![CDATA[We try to connect to the kext when the app starts ([code](https://github.com/github/SoftU2F/blob/45825a5bd6e6bad7ae9bd681c8584cbcb6e7fb7b/SoftU2FTool/U2FHID.swift#L24)). This also happens when the app is launched from the command line (Eg. for deleting/listing registrations). If the app is already running in the background we'll get an error because the kext only allows one connection. This error is surfaced to the user, which is confusing. We should not connect to the kext unless we need to." ]]></description>
@@ -128,6 +122,12 @@
 	<title>docs: Labels recommendations</title>
 	<link>https://github.com/grafana/loki/issues/1117</link>
 	<description><![CDATA[I was searching through our recommendations for labels and couldn't find anything.<br/><br/>I think we should have in our user documentation some explanation about what are bad and good labels with some nice example.<br/><br/>Somwhere here https://github.com/grafana/loki/blob/master/docs/clients/README.md<br/><br/>We should also explain how to have the same labels in Prometheus and Why ? (switching from metrics to logs).<br/><br/>" ]]></description>
+</item>
+
+<item>
+	<title>Different packaging for release binaries</title>
+	<link>https://github.com/grafana/loki/issues/1113</link>
+	<description><![CDATA[We deploy `promtail` on all our infra VMs as native binaries. Unfortunately the choice of gunzipping the binary file is a bit incovenient for us for two reasons:<br/><br/>1. We deploy with Saltstack that natively (through archive.extract) is unable to open .gz files (it can open .tar.gz though)<br/>2. On Windows there's no native tool that can uncompress the .gz file and thus would require to install gzip first (or similar archive manager)<br/><br/>A simple solution could be to compress the resulting binary in `.zip` format which is much more supported.<br/><br/>Alternatively the uncompressed binary would work too.<br/><br/>How does the community feel about this?<br/>Thanks!<br/>" ]]></description>
 </item>
 
 <item>
