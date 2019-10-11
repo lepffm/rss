@@ -161,12 +161,6 @@
 </item>
 
 <item>
-	<title>Easier way to select the logForwarder in the loki-stack helm chart</title>
-	<link>https://github.com/grafana/loki/issues/1075</link>
-	<description><![CDATA[As of today you can choose which log forwarder you want to use within the [loki-stack chart](https://github.com/grafana/loki/tree/master/production/helm/loki-stack) by doing:<br/><br/>For promtail:<br/><br/>```<br/>helm upgrade --install loki loki/loki-stack<br/>```<br/><br/>For fluent-bit:<br/><br/>```bash<br/>helm upgrade --install loki loki/loki-stack \\<br/>    --set fluent-bit.enabled=true,promtail.enabled=false<br/>```<br/><br/>It would be great if we could instead use property in the loki-stack chart values as such:<br/><br/>```json<br/>logForwarder: [ promtail | fluent-bit | none ]<br/>```<br/><br/>This way we could install the log forwarder of our choice using:<br/><br/>```<br/>helm upgrade --install loki loki/loki-stack \\<br/>    --set logForwarder=fluent-bit<br/>```<br/><br/>/cc @joe-elliott " ]]></description>
-</item>
-
-<item>
 	<title>Color of diff changes when scrolling up and down</title>
 	<link>https://github.com/grafana/tanka/issues/82</link>
 	<description><![CDATA[Example: https://www.youtube.com/watch?v=1UKlgCK2EeM<br/>" ]]></description>
