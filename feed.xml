@@ -119,12 +119,6 @@
 </item>
 
 <item>
-	<title>Variables containing quotes are not stored/retrieved properly.</title>
-	<link>https://github.com/grafana/grafana/issues/19732</link>
-	<description><![CDATA[**What happened**:<br/><br/>I've defined the following constant variable that I use across the dashboard to filter various filesystem graphs:<br/><br/>    fstype!=\"rootfs\",mountpoint!~\"/(run|var/lib/(kubelet|rancher)).*\",mountpoint!=\"\"<br/><br/>This will work until you close Grafana or load another dashboard, but when I reload the dashboard it's shown in the query inspector as:<br/><br/>    fstype!=\\\\'rootfs\\\\',mountpoint!~\\\\'/(run|var/lib/(kubelet|rancher)).*\\\\',mountpoint!=\\\\'\\\\'<br/><br/>When editing the variable through Grafana shows it as-entered, and I can re-update the variable which causes it to work again until the dashboard is reloaded. But even if I save the dashboard with the supposedly updated variable the problem returns on the next load of the dashboard.<br/><br/>**How to reproduce it (as minimally and precisely as possible)**:<br/><br/>1. Create a variable containing quotes, as above.<br/>2. Use the variable in a query, eg:<br/>        node ]]></description>
-</item>
-
-<item>
 	<title>Self signed certificates</title>
 	<link>https://github.com/grafana/grafana-image-renderer/issues/33</link>
 	<description><![CDATA[I tested the render plugin against a Grafana instance with self signed certificate. I got the following error:<br/>Error: net::ERR ]]></description>
