@@ -125,12 +125,6 @@
 </item>
 
 <item>
-	<title>Error parsing fixed date range in ms from 10.000.000 to 100.000.000</title>
-	<link>https://github.com/grafana/grafana/issues/19738</link>
-	<description><![CDATA[**What happened**:<br/><br/>We use grafana to draw chart of data with a strange date frame<br/>`1970-01-01 01:30:00` to `1970-01-01 10:00:00`<br/><br/>So that translates to url <br/>```&amp;from=1800000&amp;to=32400000```<br/><br/>:smile: <br/><br/>And it works fine. But if you copy &amp; paste the url into other tab, the `to` date errors as \"invalid format\". <br/><br/>**What you expected to happen**:<br/>Graphs should load the date properly<br/><br/>**How to reproduce it (as minimally and precisely as possible)**:<br/>Paste to any chart a parameter `&amp;to=` with values from range 10.000.000 to 100.000.000<br/><br/>**Anything else we need to know?**:<br/>Please don't ask why we use this date-range.<br/><br/>**Environment**:<br/>- Grafana version: 6.2.5<br/>- Data source type &amp; version: MySQL but I don't think it matters<br/>- OS Grafana is installed on: Linux<br/>- User OS &amp; Browser: Linux, Chrome<br/>- Grafana plugins: <br/>- Others:<br/>" ]]></description>
-</item>
-
-<item>
 	<title>Self signed certificates</title>
 	<link>https://github.com/grafana/grafana-image-renderer/issues/33</link>
 	<description><![CDATA[I tested the render plugin against a Grafana instance with self signed certificate. I got the following error:<br/>Error: net::ERR ]]></description>
