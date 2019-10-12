@@ -107,6 +107,12 @@
 </item>
 
 <item>
+	<title>Grafana won't render OpenTSDB timeseries starting with a NaN</title>
+	<link>https://github.com/grafana/grafana/issues/19770</link>
+	<description><![CDATA[**What happened**:<br/><br/>Chart line failed to render when a NaN was found at the start of the response from OpenTSDB. Chart renders fine when there are NaNs in the data, but not at the start.<br/><br/>**What you expected to happen**:<br/><br/>No difference between responses starting and just containing NaN.<br/><br/>**How to reproduce it (as minimally and precisely as possible)**:<br/><br/>Construct a query which returns NaN at the start of the returned data. See attachments for example query inspector captures.<br/>[startsData.json.txt](https://github.com/grafana/grafana/files/3718227/startsData.json.txt)<br/>[startsNaN.json.txt](https://github.com/grafana/grafana/files/3718229/startsNaN.json.txt)<br/><br/><br/><br/>**Anything else we need to know?**:<br/>I don't think so.<br/><br/>**Environment**:<br/>- Grafana version: 6.3.2<br/>- Data source type &amp; version: OpenTSDB - awaiting version<br/>- OS Grafana is installed on:<br/>  Linux - awaiting version<br/>- User OS &amp; Browser: <br/>  Chrome 75.0.3770.100 (Official Build) (64-bit) <br/>  Windows 10 OS Version 1803 (Build 17134.984)<br/>- Grafana plugins:<br/>- Others:<br/>" ]]></description>
+</item>
+
+<item>
 	<title>CloudWatch dimension \"Service class\" not working</title>
 	<link>https://github.com/grafana/grafana/issues/19761</link>
 	<description><![CDATA[<!--<br/>Please use this template while reporting a bug and provide as much info as possible.<br/>Questions should be posted to https://community.grafana.com<br/>Use query inspector to troubleshoot issues: https://community.grafana.com/t/using-grafanas-query-inspector-to-troubleshoot-issues/2630<br/>--><br/><br/>**What happened**:<br/>Using the Cloudwatch data source the dimension \"Service class\" the dimension values are not populated. <br/>![image](https://user-images.githubusercontent.com/49911675/66633013-68165e00-ec3c-11e9-8b5c-0e9b0e5dc1f8.png)<br/><br/>This can be solved by manually by typing \"service class\" (all lower case) as a dimension, so the issue is the capital **S** in the Grafana dimension. <br/><br/>**Environment**:<br/>- Grafana version:<br/>- Data source type &amp; version: cloudwatch<br/>- OS Grafana is installed on:<br/>- User OS &amp; Browser:<br/>- Grafana plugins:<br/>- Others:<br/>" ]]></description>
