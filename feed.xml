@@ -119,12 +119,6 @@
 </item>
 
 <item>
-	<title>Tables from Postgres datasource that are created under schemas with dashes are not listed</title>
-	<link>https://github.com/grafana/grafana/issues/19743</link>
-	<description><![CDATA[<!--<br/>Please use this template while reporting a bug and provide as much info as possible.<br/>Questions should be posted to https://community.grafana.com<br/>Use query inspector to troubleshoot issues: https://community.grafana.com/t/using-grafanas-query-inspector-to-troubleshoot-issues/2630<br/>--><br/><br/>**What happened**:<br/>In the query tool when choosing from 'select table', tables that exists in schema `test-schema` doesnt shows up, even if `search ]]></description>
-</item>
-
-<item>
 	<title>Self signed certificates</title>
 	<link>https://github.com/grafana/grafana-image-renderer/issues/33</link>
 	<description><![CDATA[I tested the render plugin against a Grafana instance with self signed certificate. I got the following error:<br/>Error: net::ERR ]]></description>
