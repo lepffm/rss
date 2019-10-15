@@ -101,12 +101,6 @@
 </item>
 
 <item>
-	<title>Grafana won't render OpenTSDB timeseries starting with a NaN</title>
-	<link>https://github.com/grafana/grafana/issues/19770</link>
-	<description><![CDATA[**What happened**:<br/><br/>Chart line failed to render when a NaN was found at the start of the response from OpenTSDB. Chart renders fine when there are NaNs in the data, but not at the start.<br/><br/>**What you expected to happen**:<br/><br/>No difference between responses starting and just containing NaN.<br/><br/>**How to reproduce it (as minimally and precisely as possible)**:<br/><br/>Construct a query which returns NaN at the start of the returned data. See attachments for example query inspector captures.<br/>[startsData.json.txt](https://github.com/grafana/grafana/files/3718227/startsData.json.txt)<br/>[startsNaN.json.txt](https://github.com/grafana/grafana/files/3718229/startsNaN.json.txt)<br/><br/><br/><br/>**Anything else we need to know?**:<br/>I don't think so.<br/><br/>**Environment**:<br/>- Grafana version: 6.3.2<br/>- Data source type &amp; version: OpenTSDB - awaiting version<br/>- OS Grafana is installed on:<br/>  Linux - awaiting version<br/>- User OS &amp; Browser: <br/>  Chrome 75.0.3770.100 (Official Build) (64-bit) <br/>  Windows 10 OS Version 1803 (Build 17134.984)<br/>- Grafana plugins:<br/>- Others:<br/>" ]]></description>
-</item>
-
-<item>
 	<title>Self signed certificates</title>
 	<link>https://github.com/grafana/grafana-image-renderer/issues/33</link>
 	<description><![CDATA[I tested the render plugin against a Grafana instance with self signed certificate. I got the following error:<br/>Error: net::ERR ]]></description>
