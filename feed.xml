@@ -119,6 +119,12 @@
 </item>
 
 <item>
+	<title>can you use kubernetes discovery when docker using journald?</title>
+	<link>https://github.com/grafana/loki/issues/1151</link>
+	<description><![CDATA[I am running openshift which uses journald for logging and therefore /var/log/pods/* is empty<br/><br/>How would I go about configuring promtail to use kubernetes discovery with journald ?" ]]></description>
+</item>
+
+<item>
 	<title>docs: Labels recommendations</title>
 	<link>https://github.com/grafana/loki/issues/1117</link>
 	<description><![CDATA[I was searching through our recommendations for labels and couldn't find anything.<br/><br/>I think we should have in our user documentation some explanation about what are bad and good labels with some nice example.<br/><br/>Somwhere here https://github.com/grafana/loki/blob/master/docs/clients/README.md<br/><br/>We should also explain how to have the same labels in Prometheus and Why ? (switching from metrics to logs).<br/><br/>" ]]></description>
@@ -128,6 +134,12 @@
 	<title>Different packaging for release binaries</title>
 	<link>https://github.com/grafana/loki/issues/1113</link>
 	<description><![CDATA[We deploy `promtail` on all our infra VMs as native binaries. Unfortunately the choice of gunzipping the binary file is a bit incovenient for us for two reasons:<br/><br/>1. We deploy with Saltstack that natively (through archive.extract) is unable to open .gz files (it can open .tar.gz though)<br/>2. On Windows there's no native tool that can uncompress the .gz file and thus would require to install gzip first (or similar archive manager)<br/><br/>A simple solution could be to compress the resulting binary in `.zip` format which is much more supported.<br/><br/>Alternatively the uncompressed binary would work too.<br/><br/>How does the community feel about this?<br/>Thanks!<br/>" ]]></description>
+</item>
+
+<item>
+	<title>[helm] Deploying loki-stack with prometheus &amp; grafana fails in k8s 1.16</title>
+	<link>https://github.com/grafana/loki/issues/1080</link>
+	<description><![CDATA[**Describe the bug**<br/>Due to deprecated `apiVersion`s removed in 1.16, the prometheus &amp; grafana dependencies fail to install.<br/><br/>`stable/grafana` is fixed (currently 3.8.15) but `stable/prometheus` remains broken, pending helm/charts#17268.<br/><br/>**To Reproduce**<br/><br/>1. `helm install loki/loki-stack --set=grafana.enabled=true,prometheus.enabled=true`<br/><br/><br/>**Expected behavior**<br/>Loki, grafana, and prometheus installed.<br/><br/>**Environment:**<br/> - Infrastructure: kubernetes 1.16<br/> - Deployment tool: helm<br/><br/>**Screenshots, promtail config, or terminal output**<br/><br/>Above repro fails:<br/>> Error: apiVersion \"apps/v1beta2\" in loki-stack/charts/grafana/templates/deployment.yaml is not available<br/><br/><br/>Full errors (from `helm template | kubectl apply -f -`):<br/>```<br/>unable to recognize \"STDIN\": no matches for kind \"DaemonSet\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"apps/v1beta2\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"Deployment\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"PodSecurityPolicy\" in version \"extensions/v1beta1\"<br/>unable to recognize \"STDIN\": no matches for kind \"PodSecurityPolicy\" in version \"extensions/v1beta1\"<br/>```<br/><br/>The two policies are fixed by using `grafana==3.8.15`, but the remaining issues will require helm/charts#17268." ]]></description>
 </item>
 
 <item>
