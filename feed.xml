@@ -107,12 +107,6 @@
 </item>
 
 <item>
-	<title>Alerting: All notification channels should send even if one fails to send</title>
-	<link>https://github.com/grafana/grafana/issues/19768</link>
-	<description><![CDATA[**What happened:**<br/>A Grafana alert was configured with the following notifications in the sequence below:<br/><br/>Slack<br/>Alerta<br/>Email<br/><br/>From the logs we can see the Slack notification sent, then we can see the Alerta notification failed (a \"500 Server Error\" from the webhook). No email notification was ever attempted.<br/><br/>Error received<br/>```<br/>t=2019-10-09T04:13:05+0100 lvl=dbug msg=\"Webhook failed\" logger=notifications statuscode=\"500 INTERNAL SERVER ERROR\" body=\"{\\\"code\\\":500,\\\"errors\\\":null,\\\"messa<br/>ge\\\":\\\"Logstash TCP connection error: [Errno 111] Connection refused\\\",\\\"requestId\\\":\\\"Root=1-5d9d5041-b8ca91f6917a8d05909bb2bc\\\",\\\"status\\\":\\\"error\\\"}\<br/>\"<br/>```<br/>After receiving the error no attempt was made to send the email alert.<br/><br/><br/>**What you expected to happen:**<br/>After the failed Alerta notification I expected the email alert to fire. <br/><br/><br/>**Environment:**<br/>- Grafana version: v6.4.1 (4ba8388)<br/>- Data source type &amp; version:<br/>- OS Grafana is installed on: Ubuntu 16.04<br/>- User OS &amp; Browser: macOS Mojave 10.14.6<br/>" ]]></description>
-</item>
-
-<item>
 	<title>Self signed certificates</title>
 	<link>https://github.com/grafana/grafana-image-renderer/issues/33</link>
 	<description><![CDATA[I tested the render plugin against a Grafana instance with self signed certificate. I got the following error:<br/>Error: net::ERR ]]></description>
