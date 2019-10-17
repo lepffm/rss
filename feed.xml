@@ -113,6 +113,12 @@
 </item>
 
 <item>
+	<title>loki-stack sets a name for prometheus; breaks multiple helm releases</title>
+	<link>https://github.com/grafana/loki/issues/1169</link>
+	<description><![CDATA[**Describe the bug**<br/>The loki-stack values.yaml sets a hard-coded name for `prometheus`:<br/>```<br/>prometheus:<br/>  server:<br/>    fullnameOverride: prometheus-server<br/>```<br/>This overrides prometheus' default behavior of incorporating the `{{.Release.Name}}` into the service name.<br/><br/>Since the release name is no longer included, this breaks Helm installs if you try to have more than one release, since `prometheus-server` will already exist on the second helm release.<br/><br/>**To Reproduce**<br/>Steps to reproduce the behavior:<br/><br/>1. set up a helm chart that uses loki-stack as a requirement<br/>2. install it once with `helm install release-one`<br/>3. attempt to make a second release `helm install release-two`<br/><br/>This will result in<br/>```<br/>Error: release release-two failed: clusterroles.rbac.authorization.k8s.io \"prometheus-server\" already exists<br/>```<br/><br/>**Expected behavior**<br/>I don't see why loki-stack overrides the prometheus name, since it isn't referenced anywhere else in the helm charts.<br/>I'm guessing this values.yml line should be removed:<br/>https://github.com/grafana/loki/blob/master/production/helm/loki-stack/values.yaml#L21<br/><br/>When not overridden, I believe prometheus will incorporate the release name into it's server name on it's own.<br/>https://github.com/helm/charts/blob/master/stable/prometheus/templates/ ]]></description>
+</item>
+
+<item>
 	<title>can you use kubernetes discovery when docker using journald?</title>
 	<link>https://github.com/grafana/loki/issues/1151</link>
 	<description><![CDATA[I am running openshift which uses journald for logging and therefore /var/log/pods/* is empty<br/><br/>How would I go about configuring promtail to use kubernetes discovery with journald ?" ]]></description>
