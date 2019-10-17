@@ -89,12 +89,6 @@
 </item>
 
 <item>
-	<title>Add Draft PR support</title>
-	<link>https://github.com/github/VisualStudio/issues/2329</link>
-	<description><![CDATA[**Is your feature request related to a problem? Please describe.**<br/>I wouldn't say it's a problem, but it would be nice to add support to create draft PRs inside Visual Studio.<br/><br/>**Describe the solution you'd like**<br/>Draft PRs will allow users to create PRs earlier in the development workflow and also provide more parity with dotcom.<br/><br/>This work would include being able to:<br/>- create draft PRs<br/>- view draft PRs<br/>- filter by a status of draft" ]]></description>
-</item>
-
-<item>
 	<title>elastic: write log entries to logs indices using a correct mapping for the @timestamp field</title>
 	<link>https://github.com/grafana/fake-data-gen/issues/8</link>
 	<description><![CDATA[Currently data are written to logs indices, but I cannot use the indices as datasource in grafana because I got error that @timestamp is not a valie time field." ]]></description>
@@ -194,6 +188,12 @@
 	<title>Feature Request: Auto-detect policy document fragment format</title>
 	<link>https://github.com/awslabs/aws-iam-generator/issues/17</link>
 	<description><![CDATA[As a user, I should be able to write my IAM policy statements in either JSON or YAML and the tool should automatically handle either format.<br/><br/>Ideally this would be a distinct feature from the `--format` flag introduced in https://github.com/awslabs/aws-iam-generator/pull/13 which IMO should be refactored to influence the CloudFormation output format only.<br/>" ]]></description>
+</item>
+
+<item>
+	<title>Bulk delete from MIE Webapp</title>
+	<link>https://github.com/awslabs/aws-media-insights-engine/issues/53</link>
+	<description><![CDATA[It would be helpful to be able to bulk delete assets from the collection view" ]]></description>
 </item>
 
 <item>
