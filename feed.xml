@@ -95,6 +95,12 @@
 </item>
 
 <item>
+	<title>Grafana doesn't run on MacOS 10.5 Catalina</title>
+	<link>https://github.com/grafana/grafana/issues/19887</link>
+	<description><![CDATA[<!--<br/>Please use this template while reporting a bug and provide as much info as possible.<br/>Questions should be posted to https://community.grafana.com<br/>Use query inspector to troubleshoot issues: https://community.grafana.com/t/using-grafanas-query-inspector-to-troubleshoot-issues/2630<br/>--><br/><br/>**What happened**:<br/><br/>Upgraded to Catalina, afterwards grafana fails to run. It was installed with brew. <br/>upgraded brew, compiled grafana from source, still fails to load.<br/><br/>/usr/local/opt/grafana/bin/grafana-server: /usr/local/opt/grafana/bin/grafana-server: cannot execute binary file <br/><br/>**What you expected to happen**:<br/>working grafana<br/><br/>**How to reproduce it (as minimally and precisely as possible)**:<br/>Install grafana with Mac brew <br/>then try to load localhost:3000<br/><br/>**Anything else we need to know?**:<br/><br/>- removed grafana, reinstalled precompiled binary with brew.<br/>- removed again compiled with brew<br/><br/>**Environment**:<br/><br/>- Grafana version: grafana 6.4.2 <br/>- Data source type &amp; version:<br/>- OS Grafana is installed on: macOS Catalina 10.5<br/>- User OS &amp; Browser: Safari<br/>- Grafana plugins:<br/>- Others:<br/>" ]]></description>
+</item>
+
+<item>
 	<title>Self signed certificates</title>
 	<link>https://github.com/grafana/grafana-image-renderer/issues/33</link>
 	<description><![CDATA[I tested the render plugin against a Grafana instance with self signed certificate. I got the following error:<br/>Error: net::ERR ]]></description>
