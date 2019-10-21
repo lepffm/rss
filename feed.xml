@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" ?><rss version="2.0"><channel><title>Help Wanted</title><description>Help Wanted Issues</description><link>https://lbonanomi.github.io/rss/feed.xml</link><item>	<title>Add Carthage compatibility badge to the README</title>	<link>https://github.com/github/Archimedes/issues/38</link>	<description><![CDATA[Using  <a href="https://github.com/Carthage/Carthage/blob/7a0153cc164e301c46527f6e20c886728a0dc218/README.md#declare-your-compatibility)">these instructions</a> 
+<?xml version="1.0" encoding="UTF-8" ?><rss version="2.0"><channel><title>Help Wanted</title><description>Help Wanted Issues</description><link>https://lbonanomi.github.io/rss/feed.xml</link>
+ 
+ 
+ <item> <title>gist-ladder-test</title> 
+<link>https://www.google.com</link>
+<description>
+<article class="markdown-body entry-content p-5" itemprop="text">
+<p>We should have a test that each license text in <code>_licenses</code> is the same as the plain text license in the SPDX collection to automate the requirement described at <a href="https://github.com/github/choosealicense.com/blob/gh-RIBUTING.md#adding-a-license">https://github.com/github/choosealicense.com/blob/gh-pages/CONTRIBUTING.md#adding-a-license</a></p>
+<p>The text of the license should match the corresponding text found in <a href="https://github.com/spdx/license-list-data/blob/master/text/">spdx/license-list-data</a>. If there are errors there, please fix them in <a href="https://github.com/spdx/license-list-XML">spdx/license-list-XML</a> (from which thxt version is generated) so as to minimize license text variation and make it easier for choosealicense.com to eventually consume license texts directly from SPDX.</p>
+<p>The test could clone spdx/license-list-data and compare each license we have cataloged in this project. Many existing licenses would probably have to be marked as expected failures due to bugs in SPDX output and discrepancies in how this project has cataloged some licenses. But we should address upfrontew license cataloged here, and continue to chip away at the existing inconsistencies.</p>
+</article>
+</description> 
+</item>
+
+ 
+ 
+ 
+ 
+ <item>	<title>Add Carthage compatibility badge to the README</title>	<link>https://github.com/github/Archimedes/issues/38</link>	<description><![CDATA[Using  <a href="https://github.com/Carthage/Carthage/blob/7a0153cc164e301c46527f6e20c886728a0dc218/README.md#declare-your-compatibility)">these instructions</a> 
 
 .<br/>" ]]></description></item><item>	<title>Test that license texts match SPDX plain license texts</title>	<link>https://github.com/github/choosealicense.com/issues/636</link>	<description><![CDATA[We should have a test that each license text in ` ]]></description></item><item>	<title>Annotating license texts with license rules</title>	<link>https://github.com/github/choosealicense.com/issues/441</link>	<description><![CDATA[ <a href="https://github.com/github/choosealicense.com/pull/320#issuecomment-230746990)">Comment/question today</a> 
 
@@ -27,11 +45,16 @@
 
  currently works with default pagination of only 30 repositories.<br/><br/>Need to handle pagination in case of more than 30 repositories are within the organization.<br/><br/> <a href="https://developer.github.com/v3/guides/traversing-with-pagination/)">Relevant Doc</a> 
 
-" ]]></description></item><item>	<title>Finish migrating to `pathtype` library.</title>	<link>https://github.com/github/semantic/issues/288</link>	<description><![CDATA[The migration to `pathtype` has been overall a pleasant one—it makes functions much more indicative of their purpose, and it’s caught some bugs (though not serious ones)
+" ]]></description></item>
+ 
+ <item>	<title>Finish migrating to `pathtype` library.</title>	<link>https://github.com/github/semantic/issues/288</link>	<description><![CDATA[The migration to `pathtype` has been overall a pleasant one—it makes functions much more indicative of their purpose, and it’s caught some bugs (though not serious ones)
 . Right now we’re an uneasy hybrid of `pathtype` solutions and `FilePath`; we should move off of the latter completely. This involves overhauling `Semantic.CLI` to use `pathtype`; the  <a href="http://hackage.haskell.org/package/pathtype-0.8.1)">documentation</a> 
 
  provides a recipe to make `optparse-applicative` parsers do the right thing (respecting the path semantics; i.e., if we tell a parser to expect an absolute path, the parser will fail unless said path is actually absolute.)
-" ]]></description></item><item>	<title>Clojure(Script)
+" ]]></description></item>
+
+  
+ <item>	<title>Clojure(Script)
  support</title>	<link>https://github.com/github/semantic/issues/217</link>	<description><![CDATA[Any possibility of adding Clojure/ClojureScript support?" ]]></description></item><item>	<title>Don't connect to kext when invoked with CLI args</title>	<link>https://github.com/github/SoftU2F/issues/39</link>	<description><![CDATA[We try to connect to the kext when the app starts ( <a href="https://github.com/github/SoftU2F/blob/45825a5bd6e6bad7ae9bd681c8584cbcb6e7fb7b/SoftU2FTool/U2FHID.swift#L24)">code</a> 
 
 )
