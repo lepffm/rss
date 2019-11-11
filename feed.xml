@@ -34,9 +34,9 @@ In production, it would probably make sense to <samp>compile</samp> all descende
   <item>	
    <title>Allow rendering components in the controller</title>	
    <link>https://github.com/github/actionview-component/issues/38</link>	<description><![CDATA[Hi @joelhawksley <br/><br/>I am happy to see a view model lib, that integrates smoothly with rails. While playing around with `ActionView::Component` i noticed that it is not possible to render components in the controller. I saw, that you are monkey patching `ActionView::Base#render`. So i tried to override the `render` method in my `ApplicationController` in a similar way, but without success.<br/><br/>At the moment users are forced to write templates with a single line: `<%= render(PostShowComponent, post: @post)
- %>`. It would be great to have an API like this:<br/><br/>```ruby <br/>class PostsController < ApplicationController<br/>  def show <br/>    post = Post.find(params[:id])
+ %>`. It would be great to have an API like this:<br/><br/><samp> <br/>class PostsController < ApplicationController<br/>  def show <br/>    post = Post.find(params[:id])
 <br/>    render(PostShowComponent, post: post)
-<br/>  end<br/>end<br/>```<br/>I could provide a PR with a failing feature test, if that helps. <br/><br/>Thank you , ushi<br/><br/>P.S. Found a workaround. Maybe its a good starting point:<br/><br/>```ruby<br/>class ApplicationController<br/>  private<br/><br/>  def render_component(component, args, **options)
+<br/>  end<br/>end<br/></samp><br/>I could provide a PR with a failing feature test, if that helps. <br/><br/>Thank you , ushi<br/><br/>P.S. Found a workaround. Maybe its a good starting point:<br/><br/>```ruby<br/>class ApplicationController<br/>  private<br/><br/>  def render_component(component, args, **options)
 <br/>    options = options.reverse_merge(layout: true)
 <br/>    render(html: view_context.render(component, args)
 , options)
