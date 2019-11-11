@@ -8,6 +8,10 @@ REPO_OWNER=$GITHUB_ACTOR
 REPO_NAME=$(basename $(pwd))
 RSS_FEED_URL="https://$GITHUB_ACTOR.github.io/$REPO_NAME/feed.xml"
 
+# Issues with no updates in the last 2 weeks are dust collectors
+#
+CUTOFFDATE=1209600
+
 if [[ -z "$TOKEN" ]]
 then
     echo "Please create a secret called \"TOKEN\" at https://github.com/$REPO_OWNER/$REPO_NAME/settings/secrets with a valid access token"
@@ -37,8 +41,8 @@ LANGUAGES=$(echo "$LANGUAGES" | tr -s ' ' | tr ' ' '|')
                 # Only tell me about repos that contain languages I use
                 curl -k -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/languages" | jq . | egrep -qi "$LANGUAGES" && (
                     curl -k -s -u :$TOKEN "https://api.github.com/repos/$ISSUED/issues" |\
-                     jq '.[] | "\(.labels[].name)¡\(.title)¡\(.html_url)¡\(.body)"' |\
-                     awk -F"¡" '/help wanted/ && $3 ~ /http/ { gsub(/\\n/, "<br\/>", $4); print "<item>\n\t<title>"$2"</title>\n\t<link>"$3"</link>\n\t<description><![CDATA["$4" ]]></description>\n</item>\n" }' 2>/dev/null | perl -e 'while(<>){$_=~s/\\r//g;print}'
+                      jq '.[] | "\(.updated_at)¡\(.labels[].name)¡\(.title)¡\(.html_url)¡\(.body)"' | awk -F"¡" '/help wanted/ { gsub(/[\"|\-|T|:|Z]/, " ", $1); if ((systime()-"'$CUTOFFDATE'")<mktime($1)) print $3"¡"$4"¡"$5 }' |\
+                      awk -F"¡" '{ gsub(/\\n/, "<br\/>", $4); print "<item>\n\t<title>"$1"</title>\n\t<link>"$2"</link>\n\t<description><![CDATA["$3" ]]></description>\n</item>\n" }' 2>/dev/null | perl -e 'while(<>){$_=~s/\\r//g;print}'
                 )
             done
         done
