@@ -1,5 +1,5 @@
 LANGUAGES="shell go python perl"
-ORGS="github"
+ORGS="github grafana"
 
 # Actions metadata
 #
