@@ -17,10 +17,10 @@
    <title> add new awk one-liners </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/35310ec6740b555ba1ab1260e50ed905cc4b5ac2 </link>
 <description><![CDATA[" <pre>
-+###### Search for matching lines
-+# egrep foo
-+awk '/foo/' filename
-+```
++###### Search for matching lines  
++# egrep foo  
++awk '/foo/' filename  
++```  
 +###### Search non matching lines
 +```bash
 +# egrep -v foo
