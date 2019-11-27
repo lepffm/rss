@@ -16,7 +16,7 @@
 <item>
    <title> add new awk one-liners </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/35310ec6740b555ba1ab1260e50ed905cc4b5ac2 </link>
-<description><![CDATA["
+<description><![CDATA[" <pre>
 +###### Search for matching lines
 +# egrep foo
 +awk '/foo/' filename
@@ -91,7 +91,7 @@
 +```bash
 +grep . filename > newfilename
 +```
-" ]]></description>
+"</pre> ]]></description>
 </item>
 
 <item>
@@ -186,9 +186,9 @@
 <item>
    <title> fix a long description </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/7f4b595f9e374dd43f3831f43cd8f600c41564e0 </link>
-<description><![CDATA["
+<description><![CDATA["<pre>
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://github.com/mozilla/ssl-config-generator"><b>ssl-config-generator</b></a> - help you follow the Mozilla Server Side TLS configuration guidelines.<br>
-" ]]></description>
+" </pre>]]></description>
 </item>
 
 <item>
