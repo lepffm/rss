@@ -8,16 +8,16 @@
 <item>
    <title> add 'Powerlevel9k' </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/91600baa21a5c17d1c66edd3cac680cff379ee3a </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://github.com/romkatv/powerlevel10k"><b>powerlevel10k</b></a> - is a fast reimplementation of Powerlevel9k ZSH theme.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add new awk one-liners </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/35310ec6740b555ba1ab1260e50ed905cc4b5ac2 </link>
-<description><![CDATA["
+<description><![CDATA[
 +###### Search for matching lines <br>
 
 +# egrep foo <br>
@@ -166,13 +166,13 @@
 
 +``` <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add perl one-liners </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/b2d6885850b7970d92f3c9b24e3c5050f3fcfa57 </link>
-<description><![CDATA["
+<description><![CDATA[
 +  * [perl](#tool-perl) <br>
 
 +##### Tool: [perl](https://www.perl.org/) <br>
@@ -249,18 +249,18 @@
 
 +``` <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add new stuff + 'Hack Firefox addressbar' </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/c039844fbf8f4df3e8fc6303d26e82729098bd3e </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://openresty.org/en/"><b>OpenResty</b></a> - is a dynamic web platform based on NGINX and LuaJIT.<br> <br>
 
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://www.manning.com/books/http2-in-action"><b>HTTP/2 in Action</b></a> - an excellent introduction to the new HTTP/2 standard.<br> <br>
 
-+&nbsp;&nbsp;:small_orange_diamond: <a href="https://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/"><b>Let's code a TCP/IP stack</b></a> - great stuff to learn network and system programming at a deeper level.<br> <br>
++&nbsp;&nbsp;:small_orange_diamond: <a href="https://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/"><b>Let's code a TCP/IP stack</b></a> - great stuff to learn network and system programming at                                                                                                                   a deeper level.<br> <br>
 
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://www.owasp.org/index.php/OWASP_Proactive_Controls"><b>OWASP ProActive Controls</b></a> - OWASP Top 10 Proactive Controls 2018.<br> <br>
 
@@ -278,22 +278,22 @@
 
 +- `@` - for matches in web addresses. <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add 'HackingNeuralNetworks' </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/11752db48dd12ef30e293145305ea0933d0aaf89 </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://github.com/Kayzaks/HackingNeuralNetworks"><b>HackingNeuralNetworks</b></a> - is a small course on exploiting and defending neural networks.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add new search engines </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/8b30960b0f816968fcb7f88791cdf5e8c4a3653d </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://weleakinfo.com"><b>We Leak Info</b></a> - world's fastest and largest data breach search engine.<br> <br>
 
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://scylla.sh"><b>scylla</b></a> - db dumps and more.<br> <br>
@@ -316,69 +316,69 @@
 
 +&nbsp;&nbsp;:small_orange_diamond: <a href="http://phrack.org/index.html"><b>phrack.org</b></a> - an awesome collection of articles from several respected hackers and other thinkers.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> fix a long description </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/7f4b595f9e374dd43f3831f43cd8f600c41564e0 </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://github.com/mozilla/ssl-config-generator"><b>ssl-config-generator</b></a> - help you follow the Mozilla Server Side TLS configuration guidelines.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add 'awesome-shodan-queries' </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/8a44838c03a577d271444e215eb0703fe9592ae8 </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://github.com/jakejarvis/awesome-shodan-queries"><b>awesome-shodan-queries</b></a> - interesting, funny, and depressing search queries to plug into shodan.io.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> Merge pull request #125 from creyD/master </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/7561e7b7138e116b2e6c48463abb8bdcad7560d1 </link>
-<description><![CDATA["
+<description><![CDATA[
 + &nbsp;&nbsp;:small_orange_diamond: <a href="https://generated.photos"><b>AI Generated Photos</b></a> - 100.000 AI generated faces.<br> <br>
 
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://generated.photos"><b>AI Generated Photos</b></a> - 100.000 AI generated faces.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> fix typo </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/18017122311ee14a99f7145589b9c83427374d5f </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://generated.photos"><b>AI Generated Photos</b></a> - 100.000 AI generated faces.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> Added link for generated.photos </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/6b89b7aec0a7f884c8df66ae64e98df8cf869057 </link>
-<description><![CDATA["
+<description><![CDATA[
 + &nbsp;&nbsp;:small_orange_diamond: <a href="https://generated.photos"><b>AI Generated Photos</b></a> - 100.000 AI generated faces.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add 'Mozilla SSL Configuration Generator' </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/cc5edfa1d44dcfb998b1f9a7cabbb12dee9bbbbd </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://github.com/mozilla/ssl-config-generator"><b>ssl-config-generator</b></a> - is a tool which builds configuration files to help you follow the Mozilla Server Side TLS configuration guidelines.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> update paths </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/6e00a6ab678d937d4dadd357836a22ea525241b7 </link>
-<description><![CDATA["
+<description><![CDATA[
 +## Using the issue tracker <br>
 
 +The [issue tracker](https://github.com/trimstray/the-book-of-secret-knowledge/issues) is <br>
@@ -395,74 +395,74 @@
 
 +Before adding a pull request, please see the **[contributing guidelines](.github/CONTRIBUTING.md)**. You should also remember about this: <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> minor fix </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/62f533707bbfabe2c71aa6c659802a917684cc0a </link>
-<description><![CDATA["
-" ]]></description>
+<description><![CDATA[
+ ]]></description>
 </item>
 
 <item>
    <title> Merge branch 'master' of github.com:trimstray/the-book-of-secret-know… </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/de75faa36fd7a36ca619420244d44d63656c0014 </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://cybersecurity.wtf"><b>CyberSec WTF</b></a> - provides web hacking challenges derived from bounty write-ups<br> <br>
 
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://cybersecurity.wtf"><b>CyberSec WTF</b></a> - provides web hacking challenges derived from bounty write-ups.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add .github </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/eb659d6af7f5ceb4cdc2e8d41ade12ee6dc39533 </link>
-<description><![CDATA["
+<description><![CDATA[
 +open_collective: trimstray <br>
 
 +github: trimstray <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> Merge pull request #124 from yehgdotnet/cybersecwtf </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/1775fe232eefaaa265a559b2e8d45e74d2313149 </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://cybersecurity.wtf"><b>CyberSec WTF</b></a> - provides web hacking challenges derived from bounty write-ups<br> <br>
 
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://cybersecurity.wtf"><b>CyberSec WTF</b></a> - provides web hacking challenges derived from bounty write-ups.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> fix typo </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/cf0b07848bea9d4a0bd15829de32a0edbc31e006 </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://cybersecurity.wtf"><b>CyberSec WTF</b></a> - provides web hacking challenges derived from bounty write-ups.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> Added cybersecurity.wtf </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/1ad28efc709536677ef437b704e23e9781738f53 </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://cybersecurity.wtf"><b>CyberSec WTF</b></a> - provides web hacking challenges derived from bounty write-ups<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 <item>
    <title> add 'kubernetes-production-best-practices' </title>
    <link> https://github.com/trimstray/the-book-of-secret-knowledge/commit/610d133c1d34b27652e281b93b8ba4e52a8fc48b </link>
-<description><![CDATA["
+<description><![CDATA[
 +&nbsp;&nbsp;:small_orange_diamond: <a href="https://learnk8s.io/production-best-practices/"><b>kubernetes-production-best-practices</b></a> - Checklists with best-practices for production-ready Kubernetes.<br> <br>
 
-" ]]></description>
+ ]]></description>
 </item>
 
 
