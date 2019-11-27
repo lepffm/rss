@@ -21,11 +21,11 @@
 +# egrep foo  
 +awk '/foo/' filename  
 +```  
-+###### Search non matching lines
-+```bash
-+# egrep -v foo
-+awk '!/foo/' filename
-+```
++###### Search non matching lines<br>
++```bash<br>
++# egrep -v fo<br>o
++awk '!/foo/' filename<br>
++```<br>
 +###### Print matching lines with numbers
 +```bash
 +# egrep -n foo
