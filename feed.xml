@@ -16,13 +16,5 @@
 
 <br/><br/>One way it can be improved is to include some \"yes/no/undefined\" check-boxes along the top of the table.<br/>When you eg: check the box above: \"Same License\" it brings all \"same licenses\" to the top &amp; grays out all other licenses.<br/>* If you check several boxes, only those licenses with ALL checked conditions are highlighted.<br/>* Below those (partially grayed out, or something)
  are licenses that partially match the check-boxes (in decreasing number of matches)
-.<br/>* And below that too is the remaining licenses, totally grayed out.<br/><br/>That would make this page awesome to use.<br/>Thanks &amp; hope this helps." ]]></description></item><item>	<title>R support</title>	<link>https://github.com/github/semantic/issues/382</link>	<description><![CDATA[R is a  <a href="https://stackoverflow.blog/2017/10/10/impressive-growth-r/">widely used</a> 
-
-, growing language often used in Data Science and Statistics.<br/><br/>While it does not have a published formal specification, there is a  <a href="https://cran.r-project.org/doc/manuals/r-release/R-lang.pdf">draft specification</a> 
-
- that describes lexing and parsing the language.<br/><br/>In the most  <a href="https://github.com/wch/r-source">widely used implementation</a> 
-
- the parsing is done with a bison parser defined in  <a href="https://github.com/wch/r-source/blob/ff1bca2f21aba271d428474f00494eece5c36dd3/src/main/gram.y">gram.y</a> 
-
-.<br/><br/>The lexing rules for R are somewhat complex, but the parsing is relatively straightforward, as generally everything is an expression.<br/><br/>It would very beneficial to the R community to have support for R in semantic!" ]]></description></item><item>	<title>Kotlin support</title>	<link>https://github.com/github/semantic/issues/233</link>	<description><![CDATA[As a Kotlin user, it would be benefical if semantic support Kotlin programming language.<br/>https://kotlinlang.org/" ]]></description></item><item>	<title>Clojure(Script)
+.<br/>* And below that too is the remaining licenses, totally grayed out.<br/><br/>That would make this page awesome to use.<br/>Thanks &amp; hope this helps." ]]></description></item><item>	<title>Clojure(Script)
  support</title>	<link>https://github.com/github/semantic/issues/217</link>	<description><![CDATA[Any possibility of adding Clojure/ClojureScript support?" ]]></description></item></channel></rss>
