@@ -9,4 +9,4 @@
 . Right now we’re an uneasy hybrid of `pathtype` solutions and `FilePath`; we should move off of the latter completely. This involves overhauling `Semantic.CLI` to use `pathtype`; the  <a href="http://hackage.haskell.org/package/pathtype-0.8.1">documentation</a> 
 
  provides a recipe to make `optparse-applicative` parsers do the right thing (respecting the path semantics; i.e., if we tell a parser to expect an absolute path, the parser will fail unless said path is actually absolute.)
-" ]]></description></item></channel></rss>
+" ]]></description></item><item>	<title>Registry addon config</title>	<link>https://github.com/ubuntu/microk8s/issues/926</link>	<description><![CDATA[Hello, since dealing with microk8s for some time now, I would like to ask if the registry can be configured to use less than the default 20GB space. <br/>In other words, is it known the location of the predefined .yaml manifest files that start the addons?" ]]></description></item></channel></rss>
