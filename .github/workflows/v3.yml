@@ -1,10 +1,10 @@
 name: Rebuild "Help Wanted" RSS feed
 
-#on: [push]
+on: [push]
 
 on:
   schedule:
-    - cron:  '0 0,8,18 * * *'
+    - cron:  '0 0,8,16 * * *'
 
 jobs:
   build:
